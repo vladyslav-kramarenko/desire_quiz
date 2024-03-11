@@ -1,0 +1,122 @@
+/* Общие стили для главной страницы */
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.background-image {
+    background:
+            linear-gradient(180deg,rgba(10, 10, 10, 1), transparent),
+            url('desire.png');
+    background-size: cover;
+    /*background-position: center;*/
+    background-position: center;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 10px 5px #0003;
+    border-radius: 10px;
+}
+
+/* mobile */
+@media (max-width: 680px) {
+    .background-image {
+        width: 100%;
+        height: 100vh;
+    }
+    .start-quiz-btn{
+        margin-left: 0;
+        margin-top: 25px;
+        position: absolute;
+        bottom: 45px;
+    }
+}
+
+/* PC */
+@media (min-width: 680px) {
+    .background-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-height: 552px;
+        height: 90%;
+        min-width: 700px;
+        max-width: 900px;
+        width: 96%;
+        background: linear-gradient(180deg, rgba(10, 10, 10, 0.7), transparent), url('desire.png');
+        background-position: center center;
+        background-size: cover;
+    }
+    .start-quiz-btn{
+    }
+}
+
+@media (max-width: 430px) {
+    .start-quiz-btn{
+        padding: 15px;
+    }
+}
+
+.title {
+    max-width: 400px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 14px;
+    margin-top: 20px;
+    white-space: pre-wrap;
+}
+
+
+.subtitle {
+    color: #fff;
+
+    font-size: 18px;
+    font-weight: 400;
+    white-space: pre-wrap;
+    margin-bottom: 14px;
+}
+
+.start-quiz-btn{
+
+    text-transform: uppercase;
+    padding: 16px 20px;
+    /*font-weight: 700;*/
+    font-weight: 400;
+    font-size: 1em;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    opacity: 1;
+    text-decoration: none;
+    margin-top: 50px;
+
+    width: min-content;
+    min-width: 250px;
+    max-width: 100%;
+
+    /*background-color: rgb(1, 138, 110);*/
+    background-color: #E1886C;
+
+    /*border-radius: 10px;*/
+    /*border: 1px solid rgb(1, 138, 110);*/
+    border: 1px solid #E1886C;
+
+    color: rgb(245, 240, 240);
+    fill: rgb(245, 240, 240);
+}
+
+.start-quiz-btn:hover{
+    background-color:  #3A8A63;
+    border: 1px solid #3A8A63;
+}
