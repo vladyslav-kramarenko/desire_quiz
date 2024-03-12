@@ -1,13 +1,8 @@
-.home-page {
-
-}
-
 .background-image {
     background:
             linear-gradient(180deg,rgba(10, 10, 10, 1), transparent),
             url('desire.png');
     background-size: cover;
-    /*background-position: center;*/
     background-position: center;
     margin: auto;
 
@@ -81,42 +76,21 @@
 .subtitle {
     color: #fff;
 
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     white-space: pre-wrap;
     margin-bottom: 14px;
+    max-width: 60%;
 }
 
 .start-quiz-btn{
 
-    text-transform: uppercase;
     padding: 16px 20px;
-    /*font-weight: 700;*/
     font-weight: 400;
     font-size: 1em;
-    display: block;
-    text-align: center;
-    cursor: pointer;
-    opacity: 1;
-    text-decoration: none;
     margin-top: 50px;
 
     width: min-content;
     min-width: 250px;
     max-width: 100%;
-
-    /*background-color: rgb(1, 138, 110);*/
-    background-color: #E1886C;
-
-    /*border-radius: 10px;*/
-    /*border: 1px solid rgb(1, 138, 110);*/
-    border: 1px solid #E1886C;
-
-    color: rgb(245, 240, 240);
-    fill: rgb(245, 240, 240);
-}
-
-.start-quiz-btn:hover{
-    background-color:  #3A8A63;
-    border: 1px solid #3A8A63;
 }

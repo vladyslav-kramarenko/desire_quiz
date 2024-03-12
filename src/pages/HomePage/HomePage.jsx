@@ -11,7 +11,7 @@ function HomePage() {
                 <p className="subtitle">Пройдіть опитування та дізнайтесь вартість об'єкту нерухомості.</p>
 
                 <Link to="/questions">
-                    <button className="start-quiz-btn">Почати опитування</button>
+                    <button className="start-quiz-btn orange-btn">Почати опитування</button>
                 </Link>
             </div>
         </main>
