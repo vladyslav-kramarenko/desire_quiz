@@ -1,0 +1,35 @@
+.button {
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    padding: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px white solid;
+    position: relative;
+    width: 100%;
+    min-width: 150px;
+    margin: 10px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button:hover{
+    box-shadow: 1px 3px 5px #1c8f6a;
+}
+
+.button:focus{
+    color: #1c8f6a;
+    background-color: rgb(204, 204, 204);
+    border: 1px rgb(1, 138, 110) solid;
+
+}
+
+.button.selected {
+    color: #1c8f6a;
+    background-color: rgb(204, 204, 204);
+    border: 1px rgb(1, 138, 110) solid;
+}
