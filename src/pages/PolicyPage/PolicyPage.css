@@ -1,0 +1,32 @@
+.policy-page {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.policy-page h1, .policy-page h2 {
+    color: #333;
+}
+
+.policy-page h1 {
+    margin-bottom: 16px;
+}
+
+.policy-page h2 {
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.policy-page p, .policy-page li {
+    color: #666;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.policy-page ul {
+    margin-left: 20px;
+}
