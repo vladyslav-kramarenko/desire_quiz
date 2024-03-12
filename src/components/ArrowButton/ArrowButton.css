@@ -1,0 +1,38 @@
+.arrow-button {
+    box-sizing: border-box;
+    /*padding: 10px 20px*/
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: gray;
+
+    /*background-color: rgb(1, 138, 110);*/
+    background-color: black;
+    color: white;
+    padding: 10px;
+    /*border: none;*/
+    border: 1px black solid;
+    /*border-color: rgb(1, 138, 110);*/
+    display: block;
+    /*border: 1px #ccc solid;*/
+    /*border: 1px white solid;*/
+    position: relative;
+    width: 100%;
+    margin: 10px;
+}
+
+/* Стили для варианта 'primary' */
+.arrow-button.primary {
+    background-color: rgb(1, 138, 110);
+}
+
+/* Стили для варианта 'secondary' */
+.arrow-button.secondary {
+    background-color: black;
+    /*color: white;*/
+}
+
+.arrow-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
