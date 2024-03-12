@@ -5,7 +5,7 @@ import './ContactInfo.css';
 import ModalMessage from "../ModalMessage/ModalMessage";
 import $ from 'jquery';
 
-const ContactInfo = ({onSubmit}) => {
+const ContactInfo = () => {
     const navigate = useNavigate();
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
