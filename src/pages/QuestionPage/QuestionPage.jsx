@@ -7,6 +7,7 @@ import penthouse from './penthouse.jpg';
 import ArrowButton from "../../components/ArrowButton/ArrowButton";
 import QuestionWithRadioAnswer from "../../components/QuestionWithRadioAnswer/QuestionWithRadioAnswer";
 import ModalMessage from "../../components/ModalMessage/ModalMessage";
+import ContactInfo from "../../components/ContactInfo/ContactInfo";
 
 const QuestionPage = () => {
     const [answers, setAnswers] = useState({
@@ -81,17 +82,14 @@ const QuestionPage = () => {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const handleNextClick = () => {
-        if (!isAnswerChosen()) {
-            setIsModalOpen(true);
-        } else {
-            setCurrentQuestion(currentQuestion + 1);
-        }
+    const renderContactInfo = () => {
+        return (
+            <ContactInfo/>
+        );
     };
 
-    return (
-        <main className={"questions-page"}>
-            {renderQuestion()}
+    const renderArrows = () => {
+        return (
             <div className={"arrows"}>
                 <ArrowButton
                     variant={"secondary"}
@@ -105,6 +103,21 @@ const QuestionPage = () => {
                     onClick={handleNextClick}
                 />
             </div>
+        );
+    };
+
+    const handleNextClick = () => {
+        if (!isAnswerChosen()) {
+            setIsModalOpen(true);
+        } else {
+            setCurrentQuestion(currentQuestion + 1);
+        }
+    };
+
+    return (
+        <main className={"questions-page"}>
+            {currentQuestion <= 3 ? renderQuestion() : renderContactInfo()}
+            {currentQuestion <= 3 && renderArrows()}
             <ModalMessage
                 isOpen={isModalOpen}
                 message="Виберіть відповідь, перш ніж продовжити."
