@@ -4,8 +4,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import HomePage from './pages/HomePage/HomePage';
 import QuestionPage from './pages/QuestionPage/QuestionPage';
 import ThankYouPage from './pages/ThankTouPage/ThankYouPage';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import PolicyPage from "./pages/PolicyPage/PolicyPage";
 
 function App() {
     useEffect(() => {
@@ -13,13 +12,12 @@ function App() {
     }, []);
   return (
       <Router>
-        <Header />
           <Routes>
               <Route exact path="/" element={<HomePage />} />
               <Route path="/questions" element={<QuestionPage />} />
               <Route path="/thank-you" element={<ThankYouPage />} />
+              <Route path="/policy" element={<PolicyPage />} />
           </Routes>
-        <Footer />
       </Router>
   );
 }
