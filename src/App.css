@@ -18,3 +18,21 @@ main{
   justify-content: center;
   text-align: center;
 }
+
+.orange-btn{
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  opacity: 1;
+  text-decoration: none;
+  background-color: #E1886C;
+  border: 1px solid #E1886C;
+  color: rgb(245, 240, 240);
+  fill: rgb(245, 240, 240);
+}
+
+.orange-btn:hover{
+  background-color:  #3A8A63;
+  border: 1px solid #3A8A63;
+}
