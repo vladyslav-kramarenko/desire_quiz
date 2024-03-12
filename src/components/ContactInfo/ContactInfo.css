@@ -1,0 +1,79 @@
+.contact-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.contact-info h1{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.contact-info input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.contact-info a {
+    color: white;
+}
+
+.name-and-phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    input{
+        box-sizing: border-box;
+        width: auto;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+}
+
+.policy-label{
+    font-size: 14px;
+
+}
+
+.policy-label a{
+    text-decoration: none;
+}
+
+.submit-btn {
+    box-sizing: border-box;
+    background-color: #1c8f6a;
+    font-size: 20px;
+    color: white;
+    padding: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px rgb(1, 138, 110) solid;
+    position: relative;
+    margin: 10px 0;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+}
+
+.submit-btn:focus {
+    color: #1c8f6a;
+    background-color: rgb(204, 204, 204);
+    border: 1px rgb(1, 138, 110) solid;
+
+}
+
+@media (max-width: 680px) {
+    .name-and-phone {
+        flex-direction: column;
+    }
+}
