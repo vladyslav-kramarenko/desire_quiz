@@ -6,6 +6,15 @@
   transition: all .2s ease;
   outline: none;
 }
+
 body{
   background-color: #F2EEE9;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }

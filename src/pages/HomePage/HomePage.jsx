@@ -1,5 +1,6 @@
 import React from 'react';
 import './HomePage.css';
+import {Link} from "react-router-dom";
 
 function HomePage() {
     return (
@@ -8,7 +9,10 @@ function HomePage() {
                 <h1 className="title">Вигідні інвестиції у
                     нерухомість в Анталії 🇹🇷</h1>
                 <p className="subtitle">Пройдіть опитування та дізнайтесь вартість об'єкту нерухомості.</p>
-                <button className="start-quiz-btn">Почати опитування</button>
+
+                <Link to="/questions">
+                    <button className="start-quiz-btn">Почати опитування</button>
+                </Link>
             </div>
         </main>
     );
