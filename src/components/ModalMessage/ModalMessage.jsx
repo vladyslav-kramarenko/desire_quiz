@@ -1,6 +1,5 @@
-// SimpleModal.js
 import React from 'react';
-import './ModalMessage.css'; // Import the CSS
+import './ModalMessage.css';
 
 const ModalMessage = ({ isOpen, message, onClose }) => {
     if (!isOpen) return null;

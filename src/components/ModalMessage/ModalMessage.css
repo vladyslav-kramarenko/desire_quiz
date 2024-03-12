@@ -16,6 +16,7 @@
     border-radius: 10px;
     width: 300px;
     max-width: 80%;
+    color: black;
 }
 
 .modal-body button {
