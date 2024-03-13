@@ -13,9 +13,7 @@ const QuestionPage = () => {
     const [answers, setAnswers] = useState({
         purpose: '',
         investExperience: '',
-        type: '',
-        name: '',
-        phone: ''
+        type: ''
     });
 
     const [currentQuestion, setCurrentQuestion] = useState(1);
