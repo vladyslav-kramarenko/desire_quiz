@@ -84,7 +84,7 @@ const QuestionPage = () => {
 
     const renderContactInfo = () => {
         return (
-            <ContactInfo/>
+            <ContactInfo answers={answers}/>
         );
     };
 
@@ -125,6 +125,8 @@ const QuestionPage = () => {
             />
         </main>
     );
+
+
 };
 
 export default QuestionPage;

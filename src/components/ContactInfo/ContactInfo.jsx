@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
-import {Link} from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import './ContactInfo.css';
 import ModalMessage from "../ModalMessage/ModalMessage";
 import $ from 'jquery';
 
-const ContactInfo = () => {
+const ContactInfo = ({ answers }) => {
     const navigate = useNavigate();
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
@@ -27,13 +26,13 @@ const ContactInfo = () => {
 
         const data = {
             action: 'partner-custom-form',
-            token: process.env.CRM_API_TOKEN,
-            partner_id: process.env.PARTNER_ID,
+            token: process.env.REACT_APP_CRM_API_TOKEN,
+            partner_id: process.env.REACT_APP_PARTNER_ID,
             name: name,
             phone: phone,
-            building_id: process.env.BUILDING_ID,
+            building_id: process.env.REACT_APP_BUILDING_ID,
             lang: 'ua',
-            note: 'all the answers',
+            note: JSON.stringify(answers),
             adv_id: 30000010,
             utm_source: localStorage.getItem('utm_source'),
             utm_medium: localStorage.getItem('utm_medium'),
@@ -42,12 +41,13 @@ const ContactInfo = () => {
             utm_content: localStorage.getItem('utm_content')
         };
 
+        console.log(data);
+
         $.ajax({
             url: 'https://crm.g-plus.app/api/actions',
             method: 'post',
             data: data,
             success: function (response) {
-                console.log(response);
                 navigate('/thank-you');
             },
             error: function (error) {
@@ -89,7 +89,7 @@ const ContactInfo = () => {
                     onChange={e => setAgree(e.target.checked)}
                 />
                 <label className={"policy-label"}>
-                    Я згоден з <Link to="/policy">умовами використання та політикою конфіденційності</Link> *
+                    Я згоден з <a href="/policy" target="_blank" rel="noopener noreferrer">умовами використання та політикою конфіденційності</a> *
                 </label>
             </div>
             <button className={"submit-btn"} onClick={handleSubmit}>Залишити заявку</button>
