@@ -24,6 +24,8 @@ const ContactInfo = ({ answers }) => {
             return;
         }
 
+        const notes = Object.entries(answers).map(([key, value]) => `${key}: ${value}`).join(" ; ");
+
         const data = {
             action: 'partner-custom-form',
             token: process.env.REACT_APP_CRM_API_TOKEN,
@@ -32,7 +34,7 @@ const ContactInfo = ({ answers }) => {
             phone: phone,
             building_id: process.env.REACT_APP_BUILDING_ID,
             lang: 'ua',
-            note: JSON.stringify(answers),
+            note: notes,
             adv_id: 30000010,
             utm_source: localStorage.getItem('utm_source'),
             utm_medium: localStorage.getItem('utm_medium'),
@@ -48,6 +50,7 @@ const ContactInfo = ({ answers }) => {
             method: 'post',
             data: data,
             success: function (response) {
+                console.log(response);
                 navigate('/thank-you');
             },
             error: function (error) {
