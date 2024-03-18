@@ -9,9 +9,6 @@ function QuestionWithRadioAnswer({question, possibleAnswers, setAnswers, current
         setSelectedAnswer(answers[currentQuestion]);
     }, [currentQuestion, answers]);
 
-    console.log('Current Question:', currentQuestion); // Add this
-    console.log('Selected answer:', selectedAnswer); // Add this
-
     const handleAnswerClick = (answer) => {
         setSelectedAnswer(answer.text);
         setAnswers(prevAnswers => ({
