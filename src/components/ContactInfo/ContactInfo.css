@@ -28,13 +28,17 @@
     flex-direction: row;
     justify-content: space-between;
 
-    input{
+    input {
         box-sizing: border-box;
         width: auto;
         margin: 10px;
         padding: 10px;
         border-radius: 10px;
         text-align: center;
+    }
+
+    .phone-input{
+        margin-left: 11px;
     }
 }
 

@@ -1,25 +1,54 @@
 import React, {useState} from 'react';
-import { useNavigate } from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import './ContactInfo.css';
 import ModalMessage from "../ModalMessage/ModalMessage";
 import $ from 'jquery';
+import 'react-phone-number-input/style.css';
+import PhoneInput from 'react-phone-number-input';
 
-const ContactInfo = ({ answers }) => {
+const ContactInfo = ({answers}) => {
     const navigate = useNavigate();
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
+    const [email, setEmail] = useState('');
     const [agree, setAgree] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [modalMessage, setModalMessage] = useState('Будь ласка, заповніть усі поля.');
 
     const handleSubmit = () => {
-        if (name === '' || phone === '') {
+        if (name === '' || phone === '' || email === '') {
             setModalMessage('Будь ласка, заповніть усі поля.');
             setIsModalOpen(true);
             return;
         }
         if (!agree) {
             setModalMessage('Ви повинні погодитися з умовами використання та політикою конфіденційності.');
+            setIsModalOpen(true);
+            return;
+        }
+
+        if (!phone) {
+            setModalMessage('Будь ласка, введіть дійсний телефонний номер.');
+            setIsModalOpen(true);
+            return;
+        }
+
+        const minPhoneLength = 8;
+        const maxPhoneLength = 15;
+
+        // Remove non-digit characters for length validation
+        const digitsOnlyPhone = phone.replace(/\D/g, '');
+
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            setModalMessage('Будь ласка, введіть дійсну електронну адресу.');
+            setIsModalOpen(true);
+            return;
+        }
+
+        if (digitsOnlyPhone.length < minPhoneLength || digitsOnlyPhone.length > maxPhoneLength) {
+            setModalMessage('Будь ласка, введіть дійсний телефонний номер.');
             setIsModalOpen(true);
             return;
         }
@@ -32,6 +61,7 @@ const ContactInfo = ({ answers }) => {
             partner_id: process.env.REACT_APP_PARTNER_ID,
             name: name,
             phone: phone,
+            email: email,
             building_id: process.env.REACT_APP_BUILDING_ID,
             lang: 'ua',
             note: notes,
@@ -64,6 +94,14 @@ const ContactInfo = ({ answers }) => {
         <div className="contact-info">
             <h1>Введіть контактну інформацію</h1>
             <div className={"name-and-phone"}>
+                <PhoneInput
+                    className={"phone-input"}
+                    international
+                    defaultCountry="US"
+                    value={phone}
+                    onChange={setPhone}
+                    placeholder="Enter phone number"
+                />
                 <input
                     type="text"
                     placeholder="Ім'я"
@@ -71,19 +109,18 @@ const ContactInfo = ({ answers }) => {
                     value={name}
                     onChange={e => setName(e.target.value)}
                 />
+
                 <input
-                    type="tel"
-                    pattern="[0-9]*"
-                    placeholder="Телефон"
-                    value={phone}
+                    type="email"
+                    placeholder="e-mail"
+                    value={email}
                     onChange={
                         e => {
-                            if (/^[0-9]*$/.test(e.target.value) && e.target.value.length <= 20) {
-                                setPhone(e.target.value);
-                            }
+                            setEmail(e.target.value);
                         }
                     }
                 />
+
             </div>
             <div>
                 <input
@@ -92,7 +129,8 @@ const ContactInfo = ({ answers }) => {
                     onChange={e => setAgree(e.target.checked)}
                 />
                 <label className={"policy-label"}>
-                    Я згоден з <a href="/policy" target="_blank" rel="noopener noreferrer">умовами використання та політикою конфіденційності</a> *
+                    Я згоден з <a href="/policy" target="_blank" rel="noopener noreferrer">умовами використання та
+                    політикою конфіденційності</a> *
                 </label>
             </div>
             <button className={"submit-btn"} onClick={handleSubmit}>Залишити заявку</button>
