@@ -5,6 +5,7 @@ import ModalMessage from "../ModalMessage/ModalMessage";
 import $ from 'jquery';
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
+import ua from 'react-phone-number-input/locale/ua';
 
 const ContactInfo = ({answers}) => {
     const navigate = useNavigate();
@@ -100,7 +101,8 @@ const ContactInfo = ({answers}) => {
                     defaultCountry="US"
                     value={phone}
                     onChange={setPhone}
-                    placeholder="Enter phone number"
+                    placeholder="Телефон"
+                    labels={ua}
                 />
                 <input
                     type="text"
