@@ -6,6 +6,7 @@ import $ from 'jquery';
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
 import ua from 'react-phone-number-input/locale/ua';
+import {saveUTMParams} from "../../saveUTMParams";
 
 const ContactInfo = ({answers}) => {
     const navigate = useNavigate();
@@ -67,11 +68,7 @@ const ContactInfo = ({answers}) => {
             lang: 'ua',
             note: notes,
             adv_id: 30000010,
-            utm_source: localStorage.getItem('utm_source'),
-            utm_medium: localStorage.getItem('utm_medium'),
-            utm_campaign: localStorage.getItem('utm_campaign'),
-            utm_term: localStorage.getItem('utm_term'),
-            utm_content: localStorage.getItem('utm_content')
+            ...saveUTMParams()
         };
 
         console.log(data);

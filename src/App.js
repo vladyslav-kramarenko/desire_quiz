@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage/HomePage';
 import QuestionPage from './pages/QuestionPage/QuestionPage';
 import ThankYouPage from './pages/ThankTouPage/ThankYouPage';
 import PolicyPage from "./pages/PolicyPage/PolicyPage";
+import {saveUTMParams} from "./saveUTMParams";
 
 function App() {
     useEffect(() => {
@@ -21,15 +22,5 @@ function App() {
       </Router>
   );
 }
-
-const saveUTMParams = () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
-    utmParams.forEach(param => {
-        if (urlParams.has(param)) {
-            localStorage.setItem(param, urlParams.get(param));
-        }
-    });
-};
 
 export default App;
