@@ -9,73 +9,43 @@ import QuestionWithRadioAnswer from "../../components/QuestionWithRadioAnswer/Qu
 import ModalMessage from "../../components/ModalMessage/ModalMessage";
 import ContactInfo from "../../components/ContactInfo/ContactInfo";
 
+import {useIntl} from "react-intl";
+
 const QuestionPage = () => {
-    const [answers, setAnswers] = useState({
-        purpose: '',
-        investExperience: '',
-        type: ''
-    });
+    const intl = useIntl();
+    const [answers, setAnswers] = useState({});
+    const questions = [
+        {
+            id: 'purposeQuestion',
+            answers: [
+                { id: 'purposeAnswer1', image: '' },
+                { id: 'purposeAnswer2', image: '' },
+            ],
+        },
+        {
+            id: 'investExperienceQuestion',
+            answers: [
+                { id: 'investExperienceAnswer1', image: '' },
+                { id: 'investExperienceAnswer2', image: '' },
+            ],
+        },
+        {
+            id: 'propertyTypeQuestion',
+            answers: [
+                { id: 'propertyTypeAnswer1', image: hotel },
+                { id: 'propertyTypeAnswer2', image: flat },
+                { id: 'propertyTypeAnswer3', image: penthouse },
+            ],
+        },
+    ];
 
-    const [currentQuestion, setCurrentQuestion] = useState(1);
+    const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 
-    const renderQuestion = () => {
-        switch (currentQuestion) {
-            case 1:
-                return <QuestionWithRadioAnswer
-                    question="ДЛЯ ЯКИХ ЦІЛЕЙ РОЗГЛЯДАЄТЕ НЕРУХОМІСТЬ?"
-                    possibleAnswers={[
-                        {text: 'Для життя', image: ''},
-                        {text: 'Для інвестиції', image: ''}
-                    ]}
-                    setAnswers={setAnswers}
-                    currentQuestion="purpose"
-                    answers={answers}
-                />
-            case 2:
-                return <QuestionWithRadioAnswer
-                    question="ІНВЕСТУВАЛИ В ЗАКОРДОННУ НЕРУХОМІСТЬ РАНІШЕ?"
-                    possibleAnswers={[
-                        {text: 'Так', image: ''},
-                        {text: 'Ні', image: ''}
-                    ]}
-                    setAnswers={setAnswers}
-                    currentQuestion="investExperience"
-                    answers={answers}
-                />
-            case 3:
-                return <QuestionWithRadioAnswer
-                    question="ЯКИЙ ТИП НЕРУХОМОСТІ ВАС ЦІКАВИТЬ?"
-                    possibleAnswers={[
-                        {text: 'Готельні номери', image: hotel},
-                        {text: 'Квартира', image: flat},
-                        {text: 'Пентхаус', image: penthouse}
-                    ]}
-                    setAnswers={setAnswers}
-                    currentQuestion="type"
-                    answers={answers}
-                />
-            default:
-                return null;
-        }
-    }
+    const currentQuestion = questions[currentQuestionIndex];
 
     const isAnswerChosen = () => {
-        let currentAnswerKey;
-        switch (currentQuestion) {
-            case 1:
-                currentAnswerKey = 'purpose';
-                break;
-            case 2:
-                currentAnswerKey = 'investExperience';
-                break;
-            case 3:
-                currentAnswerKey = 'type';
-                break;
-            default:
-                return false;
-        }
-        const currentAnswer = answers[currentAnswerKey];
-        return currentAnswer !== '';
+        const currentAnswer = answers[currentQuestion.id];
+        return currentAnswer !== undefined && currentAnswer !== '';
     };
 
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -88,17 +58,18 @@ const QuestionPage = () => {
 
     const renderArrows = () => {
         return (
-            <div className={"arrows"}>
+            <div className="arrows">
                 <ArrowButton
-                    variant={"secondary"}
-                    direction={"backward"}
-                    onClick={() => setCurrentQuestion(currentQuestion - 1)}
-                    disabled={currentQuestion === 1}
+                    variant="secondary"
+                    direction="backward"
+                    onClick={() => setCurrentQuestionIndex(currentQuestionIndex - 1)}
+                    disabled={currentQuestionIndex === 0}
                 />
                 <ArrowButton
-                    variant={"primary"}
-                    direction={"forward"}
+                    variant="primary"
+                    direction="forward"
                     onClick={handleNextClick}
+                    disabled={currentQuestionIndex >= questions.length}
                 />
             </div>
         );
@@ -107,18 +78,32 @@ const QuestionPage = () => {
     const handleNextClick = () => {
         if (!isAnswerChosen()) {
             setIsModalOpen(true);
-        } else {
-            setCurrentQuestion(currentQuestion + 1);
-        }
+        } else
+            setCurrentQuestionIndex(currentQuestionIndex + 1);
     };
 
+
+
     return (
-        <main className={"questions-page"}>
-            {currentQuestion <= 3 ? renderQuestion() : renderContactInfo()}
-            {currentQuestion <= 3 && renderArrows()}
+        <main className="questions-page">
+            {currentQuestionIndex < questions.length ? (
+                <QuestionWithRadioAnswer
+                    question={intl.formatMessage({ id: questions[currentQuestionIndex].id })}
+                    possibleAnswers={questions[currentQuestionIndex].answers.map(answer => ({
+                        text: intl.formatMessage({ id: answer.id }),
+                        image: answer.image,
+                    }))}
+                    setAnswers={(selectedAnswer) => setAnswers({...answers, [questions[currentQuestionIndex].id]: selectedAnswer})}
+                    currentQuestion={questions[currentQuestionIndex].id}
+                    answers={answers}
+                />
+            ) : renderContactInfo()}
+
+            {currentQuestionIndex < questions.length && renderArrows()}
+
             <ModalMessage
                 isOpen={isModalOpen}
-                message="Виберіть відповідь, перш ніж продовжити."
+                message={intl.formatMessage({id: 'answerNotChosenModal'})}
                 onClose={() => setIsModalOpen(false)}
             />
         </main>
