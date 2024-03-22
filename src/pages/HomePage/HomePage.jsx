@@ -1,18 +1,26 @@
 import React from 'react';
 import './HomePage.css';
 import {Link} from "react-router-dom";
+import {useIntl} from "react-intl";
+import LocaleSwitcher from "../../components/LocaleSwitcher";
 
 function HomePage() {
+    const intl = useIntl();
     return (
         <main className="home-page">
             <div className="background-image">
-                <h1 className="title">Вигідні інвестиції у
-                    нерухомість в Анталії 🇹🇷</h1>
-                <p className="subtitle">Пройдіть опитування та дізнайтесь вартість об'єкту нерухомості.</p>
+                <div className={"locale-switcher"}>
+                    <LocaleSwitcher />
+                </div>
+                <h1 className="title">{intl.formatMessage({id: 'homeTitle'})} 🇹🇷</h1>
+                <p className="subtitle">{intl.formatMessage({id: 'homeSubtitle'})}</p>
 
                 <Link to="/questions">
-                    <button className="start-quiz-btn orange-btn">Почати опитування</button>
+                    <button className="start-quiz-btn orange-btn">
+                        {intl.formatMessage({id: 'startQuizButton'})}
+                    </button>
                 </Link>
+
             </div>
         </main>
     );
