@@ -6,7 +6,8 @@ import $ from 'jquery';
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
 import ua from 'react-phone-number-input/locale/ua';
-import {saveUTMParams} from "../../saveUTMParams";
+import {saveUTMParams} from "../../util/saveUTMParams";
+import {useIntl} from "react-intl";
 
 const ContactInfo = ({answers}) => {
     const navigate = useNavigate();
@@ -15,22 +16,23 @@ const ContactInfo = ({answers}) => {
     const [email, setEmail] = useState('');
     const [agree, setAgree] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [modalMessage, setModalMessage] = useState('Будь ласка, заповніть усі поля.');
+    const [modalMessage, setModalMessage] = useState('');
+    const intl = useIntl();
 
     const handleSubmit = () => {
         if (name === '' || phone === '' || email === '') {
-            setModalMessage('Будь ласка, заповніть усі поля.');
+            setModalMessage(intl.formatMessage({id: 'pleaseFillAllFields'}));
             setIsModalOpen(true);
             return;
         }
         if (!agree) {
-            setModalMessage('Ви повинні погодитися з умовами використання та політикою конфіденційності.');
+            setModalMessage(intl.formatMessage({id: 'youShouldAgreeToPolicy'}));
             setIsModalOpen(true);
             return;
         }
 
         if (!phone) {
-            setModalMessage('Будь ласка, введіть дійсний телефонний номер.');
+            setModalMessage(intl.formatMessage({id: 'pleaseInputCorrectPhone'}));
             setIsModalOpen(true);
             return;
         }
@@ -44,18 +46,25 @@ const ContactInfo = ({answers}) => {
 
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
-            setModalMessage('Будь ласка, введіть дійсну електронну адресу.');
+            setModalMessage(intl.formatMessage({id: 'pleaseInputCorrectEmail'}));
             setIsModalOpen(true);
             return;
         }
 
         if (digitsOnlyPhone.length < minPhoneLength || digitsOnlyPhone.length > maxPhoneLength) {
-            setModalMessage('Будь ласка, введіть дійсний телефонний номер.');
+            setModalMessage(intl.formatMessage({id: 'pleaseInputCorrectPhone'}));
             setIsModalOpen(true);
             return;
         }
 
         const notes = Object.entries(answers).map(([key, value]) => `${key}: ${value}`).join(" ; ");
+
+        const adv_id = {
+            en: 10000010,
+            ru: 20000010,
+            ua: 30000010,
+            tr: 40000010,
+        };
 
         const data = {
             action: 'partner-custom-form',
@@ -65,9 +74,9 @@ const ContactInfo = ({answers}) => {
             phone: phone,
             email: email,
             building_id: process.env.REACT_APP_BUILDING_ID,
-            lang: 'ua',
+            lang: intl.locale,
             note: notes,
-            adv_id: 30000010,
+            adv_id: adv_id[intl.locale] || 30000010,
             ...saveUTMParams()
         };
 
@@ -90,20 +99,20 @@ const ContactInfo = ({answers}) => {
 
     return (
         <div className="contact-info">
-            <h1>Введіть контактну інформацію</h1>
+            <h1>{intl.formatMessage({id: 'enterContactData'})}</h1>
             <div className={"name-and-phone"}>
                 <PhoneInput
                     className={"phone-input"}
                     international
-                    defaultCountry="US"
+                    defaultCountry={intl.locale.toString().toUpperCase() || "UA"}
                     value={phone}
                     onChange={setPhone}
-                    placeholder="Телефон"
+                    placeholder={intl.formatMessage({id: 'phone'})}
                     labels={ua}
                 />
                 <input
                     type="text"
-                    placeholder="Ім'я"
+                    placeholder={intl.formatMessage({id: 'name'})}
                     maxLength="20"
                     value={name}
                     onChange={e => setName(e.target.value)}
@@ -111,7 +120,7 @@ const ContactInfo = ({answers}) => {
 
                 <input
                     type="email"
-                    placeholder="e-mail"
+                    placeholder={intl.formatMessage({id: 'email'})}
                     value={email}
                     onChange={
                         e => {
@@ -128,11 +137,14 @@ const ContactInfo = ({answers}) => {
                     onChange={e => setAgree(e.target.checked)}
                 />
                 <label className={"policy-label"}>
-                    Я згоден з <a href="/policy" target="_blank" rel="noopener noreferrer">умовами використання та
-                    політикою конфіденційності</a> *
+                    <a href="/policy" target="_blank" rel="noopener noreferrer">
+                        {intl.formatMessage({id: 'iAgreeWithPolicies'})}
+                    </a> *
                 </label>
             </div>
-            <button className={"submit-btn"} onClick={handleSubmit}>Залишити заявку</button>
+            <button className={"submit-btn"} onClick={handleSubmit}>
+                {intl.formatMessage({id: 'sentRequest'})}
+            </button>
             <ModalMessage
                 isOpen={isModalOpen}
                 message={modalMessage}
