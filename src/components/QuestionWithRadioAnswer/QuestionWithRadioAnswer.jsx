@@ -1,35 +1,38 @@
 import Button from "../Button/Button";
-import {useEffect, useState} from "react";
 import './QuestionWithRadioAnswer.css';
+import {useIntl} from "react-intl";
 
-function QuestionWithRadioAnswer({question, possibleAnswers, setAnswers, currentQuestion, answers}) {
-    const [selectedAnswer, setSelectedAnswer] = useState('');
+function QuestionWithRadioAnswer({questionId, possibleAnswers, setAnswers, answers}) {
+    const intl = useIntl();
 
-    useEffect(() => {
-        setSelectedAnswer(answers[currentQuestion]);
-    }, [currentQuestion, answers]);
 
-    const handleAnswerClick = (answer) => {
-        setSelectedAnswer(answer.text);
-        setAnswers(prevAnswers => ({
-            ...prevAnswers,
-            [currentQuestion]: answer.text
+    const selectedAnswerId = answers[questionId];
+
+    const handleAnswerClick = (selectedAnswerId) => {
+        setAnswers(currentAnswers => ({
+            ...currentAnswers,
+            [questionId]: selectedAnswerId,
         }));
     };
 
     return (
-        <div className={"question-body"}>
-            <h1 className={"question"}>{question}</h1>
-            <div className={"answers"}>
+        <div className="question-body">
+            <h1 className="question">{intl.formatMessage({id: questionId})}</h1>
+            <div className="answers">
                 {possibleAnswers.map((answer, index) => (
-                    <div className={"button-div"}>
+                    <div key={index} className="button-div">
                         <Button
-                            key={index}
-                            onClick={() => handleAnswerClick(answer)}
-                            className={answer.text === selectedAnswer ? 'selected' : ''}
+                            onClick={() => handleAnswerClick(answer.id)}
+                            className={selectedAnswerId === answer.id ? 'selected' : ''}
                         >
-                            {answer.image && <img className={"question-img"} src={answer.image} alt={answer.text}/>}
-                            {answer.text}
+                            {answer.image &&
+                                <img
+                                    className="question-img"
+                                    src={answer.image}
+                                    alt={intl.formatMessage({id: answer.id})}
+                                />
+                            }
+                            {intl.formatMessage({id: answer.id})}
                         </Button>
                     </div>
                 ))}

@@ -18,23 +18,23 @@ const QuestionPage = () => {
         {
             id: 'purposeQuestion',
             answers: [
-                { id: 'purposeAnswer1', image: '' },
-                { id: 'purposeAnswer2', image: '' },
+                {id: 'purposeAnswer1', image: ''},
+                {id: 'purposeAnswer2', image: ''},
             ],
         },
         {
             id: 'investExperienceQuestion',
             answers: [
-                { id: 'investExperienceAnswer1', image: '' },
-                { id: 'investExperienceAnswer2', image: '' },
+                {id: 'investExperienceAnswer1', image: ''},
+                {id: 'investExperienceAnswer2', image: ''},
             ],
         },
         {
             id: 'propertyTypeQuestion',
             answers: [
-                { id: 'propertyTypeAnswer1', image: hotel },
-                { id: 'propertyTypeAnswer2', image: flat },
-                { id: 'propertyTypeAnswer3', image: penthouse },
+                {id: 'propertyTypeAnswer1', image: hotel},
+                {id: 'propertyTypeAnswer2', image: flat},
+                {id: 'propertyTypeAnswer3', image: penthouse},
             ],
         },
     ];
@@ -83,18 +83,13 @@ const QuestionPage = () => {
     };
 
 
-
     return (
         <main className="questions-page">
             {currentQuestionIndex < questions.length ? (
                 <QuestionWithRadioAnswer
-                    question={intl.formatMessage({ id: questions[currentQuestionIndex].id })}
-                    possibleAnswers={questions[currentQuestionIndex].answers.map(answer => ({
-                        text: intl.formatMessage({ id: answer.id }),
-                        image: answer.image,
-                    }))}
-                    setAnswers={(selectedAnswer) => setAnswers({...answers, [questions[currentQuestionIndex].id]: selectedAnswer})}
-                    currentQuestion={questions[currentQuestionIndex].id}
+                    questionId={questions[currentQuestionIndex].id}
+                    possibleAnswers={questions[currentQuestionIndex].answers}
+                    setAnswers={setAnswers}
                     answers={answers}
                 />
             ) : renderContactInfo()}
