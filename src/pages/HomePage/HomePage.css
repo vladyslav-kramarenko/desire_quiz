@@ -99,3 +99,11 @@
     position: absolute;
     top: 20px;
 }
+
+.turkey-flag{
+    vertical-align: center;
+    width: 30px;
+    height: auto;
+    margin-bottom: -1px;
+    padding-bottom: 0;
+}
