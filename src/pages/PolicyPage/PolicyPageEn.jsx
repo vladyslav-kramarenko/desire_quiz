@@ -1,7 +1,7 @@
 import React from "react";
 import "./PolicyPage.css";
 
-const PolicyPage = () => {
+const PolicyPageEn = () => {
     return (
         <main className="policy-page">
             <h1>ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ КОРИСТУВАЧІВ СЕРВІСУ</h1>
@@ -716,4 +716,4 @@ const PolicyPage = () => {
 );
 };
 
-export default PolicyPage;
+export default PolicyPageEn;

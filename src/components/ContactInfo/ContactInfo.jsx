@@ -58,7 +58,6 @@ const ContactInfo = ({answers}) => {
         // Remove non-digit characters for length validation
         const digitsOnlyPhone = phone.replace(/\D/g, '');
 
-
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
             setModalMessage(intl.formatMessage({id: 'pleaseInputCorrectEmail'}));
@@ -161,7 +160,7 @@ const ContactInfo = ({answers}) => {
                     onChange={e => setAgree(e.target.checked)}
                 />
                 <label className={"policy-label"}>
-                    <a href="/policy" target="_blank" rel="noopener noreferrer">
+                    <a href={`/policy/${intl.locale}`} target="_blank" rel="noopener noreferrer">
                         {intl.formatMessage({id: 'iAgreeWithPolicies'})}
                     </a> *
                 </label>
