@@ -1,13 +1,21 @@
 import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
-import './ContactInfo.css';
-import ModalMessage from "../ModalMessage/ModalMessage";
-import $ from 'jquery';
-import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
-import ua from 'react-phone-number-input/locale/ua';
+
+import $ from 'jquery';
+
+import ModalMessage from "../ModalMessage/ModalMessage";
 import {saveUTMParams} from "../../util/saveUTMParams";
 import {useIntl} from "react-intl";
+
+import './ContactInfo.css';
+import 'react-phone-number-input/style.css';
+
+
+import ua from 'react-phone-number-input/locale/ua';
+import en from 'react-phone-number-input/locale/en';
+import ru from 'react-phone-number-input/locale/ru';
+import tr from 'react-phone-number-input/locale/tr';
 
 const ContactInfo = ({answers}) => {
     const navigate = useNavigate();
@@ -18,6 +26,13 @@ const ContactInfo = ({answers}) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [modalMessage, setModalMessage] = useState('');
     const intl = useIntl();
+
+    const labels = {
+        "en": en,
+        "ua": ua,
+        "ru": ru,
+        "tr": tr
+    }
 
     const handleSubmit = () => {
         if (name === '' || phone === '' || email === '') {
@@ -57,7 +72,14 @@ const ContactInfo = ({answers}) => {
             return;
         }
 
-        const notes = Object.entries(answers).map(([key, value]) => `${key}: ${value}`).join(" ; ");
+        const notes = Object
+            .entries(answers)
+            .map(([questionId, answerId]) => {
+                const questionText = intl.formatMessage({id: questionId});
+                const answerText = intl.formatMessage({id: answerId});
+                return `${questionText}\n ${answerText}`;
+            })
+            .join(" \n\n ");
 
         const adv_id = {
             en: 10000010,
@@ -65,6 +87,8 @@ const ContactInfo = ({answers}) => {
             ua: 30000010,
             tr: 40000010,
         };
+
+        console.log("locale = " + intl.locale);
 
         const data = {
             action: 'partner-custom-form',
@@ -104,11 +128,11 @@ const ContactInfo = ({answers}) => {
                 <PhoneInput
                     className={"phone-input"}
                     international
-                    defaultCountry={intl.locale.toString().toUpperCase() || "UA"}
+                    defaultCountry={intl.locale === "en" ? "US" : intl.locale.toString().toUpperCase()}
                     value={phone}
                     onChange={setPhone}
                     placeholder={intl.formatMessage({id: 'phone'})}
-                    labels={ua}
+                    labels={labels[intl.locale]}
                 />
                 <input
                     type="text"
