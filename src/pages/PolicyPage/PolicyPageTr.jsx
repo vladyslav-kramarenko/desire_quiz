@@ -4,712 +4,210 @@ import "./PolicyPage.css";
 const PolicyPageTr = () => {
     return (
         <main className="policy-page">
-            <h1>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ ПОЛЬЗОВАТЕЛЕЙ СЕРВИСА</h1>
-            <p>Данная Политика конфиденциальности устанавливает порядок получения, хранения, обработки, использования и
-                раскрытие персональных данных Пользователя. Персональные данные от Пользователей Веб-сайта при
-                регистрации в форме обратной связи на Веб-сайте, а также при использовании Веб-сайта
-                Пользователями получает ОДО Жилстрой-2, которому принадлежит сайт.</p>
+            <h1>Hizmet Kullanıcılarının Gizlilik Politikası</h1>
+            <p>Bu Gizlilik Politikası, Kullanıcının kişisel verilerinin alınması, saklanması, işlenmesi, kullanılması ve
+                açıklanmasına ilişkin düzenlemeleri belirler. Web sitesi kullanıcılarının kişisel verileri, web
+                sitesindeki Geri Bildirim Formuna kayıt olurken ve web sitesini kullanırken ODO "Zhytlobud-2" tarafından
+                toplanır.</p>
             <section>
-                <h2>1. Определение терминов</h2>
-                <p>1.1 В настоящей Политике конфиденциальности используются следующие термины</p>
+                <h2>1. TERİM TANIMLARI</h2>
+                <p>1.1 Bu Gizlilik Politikası'nda aşağıdaki terimler kullanılmaktadır:</p>
                 <ul>
-                    <li>Веб-сайт — веб-страница, расположенная в сети Интернет по адресу:
-                        https://quiz.desire-antalya.com/.
+                    <li>Web sitesi - https://quiz.desire-antalya.com/ adresinde Internette bulunan bir web sayfasıdır.
                     </li>
-                    <li>Администрация Веб-сайта – уполномоченные сотрудники на управление Веб-сайтом,
-                        что
-                        действуют от имени ОДО "Жилстрой-2", которые организуют и осуществляют обработку
-                        персональных
-                        данных, а также определяют цели обработки персональных данных, состав персональных данных
-                        данных, что
-                        подлежат обработке, действию или операции, осуществляемым с персональными данными.
+                    <li>Web Sitesi Yönetimi - ODO "Zhytlobud-2" adına hareket eden ve kişisel verilerin işlenmesini
+                        organize eden ve gerçekleştiren yetkili personeldir. Ayrıca kişisel verilerin işlenme
+                        amaçlarını, işlenen kişisel verilerin kapsamını, kişisel verilerle yapılan işlemleri
+                        belirlerler.
                     </li>
-                    <li>Пользователь — лицо, разместившее персональные данные с помощью
-                        регистрации/пользования сервисами на сайте.
+                    <li>Kullanıcı - Web sitesinde hizmetlerin kaydı/yararlanması yoluyla kişisel verilerini paylaşan
+                        kişidir.
                     </li>
-                    <li>Форма обратной связи – специальная форма, где Пользователь при регистрации
-                        размещает
-                        свои персональные данные для передачи их Администрации Веб-сайта.
+                    <li>Geri Bildirim Formu - Kullanıcının kişisel verilerini kaydetmek için kullandığı özel bir
+                        formdur, bu verilerin Web Sitesi Yönetimine iletilmesi amacıyla kullanılır.
                     </li>
-                    <li>Персональные данные – сведения или совокупность сведений о физическом лице, которое
-                        идентифицирован или может быть конкретно идентифицирован.
+                    <li>Kişisel Veriler - Belirli veya belirlenebilir bir fiziksel kişiye ilişkin bilgiler veya bilgi
+                        gruplarıdır.
                     </li>
-                    <li>Обработка персональных данных – любое действие или совокупность действий, таких как
-                        сбор,
-                        регистрация, накопление, хранение, адаптирование, изменение, обновление,
-                        использование и
-                        распространение (распространение, реализация, передача), обезличивание, уничтожение
-                        персональных
-                        данных, в том числе с использованием информационных (автоматизированных) систем
-                        или
-                        без
-                        использование таких средств.
+                    <li>Kişisel Verilerin İşlenmesi - Kişisel verilerin toplanması, kaydedilmesi, biriktirilmesi,
+                        depolanması, uyarlama, değiştirme, güncelleme, kullanma ve yayılmasını (yayma, gerçekleştirme,
+                        aktarma), anonimleştirme, kişisel verilerin yok edilmesi dahil olmak üzere bir dizi işlem veya
+                        işlem grubudur, bilgi (otomatik) sistemlerin kullanılarak veya bu tür araçlar olmadan
+                        yapılabilir.
                     </li>
-                    <li>Конфиденциальность персональных данных
-                        – обязательны для соблюдения
-                        Администрацией
-                        Веб-сайта требования относительно
-                        недопущение распространения
-                        персональных данных Пользователя
-                        без
-                        его
-                        согласия или при наличии другого
-                        законного основания.
+                    <li>Kişisel Verilerin Gizliliği - Web Sitesi Yönetimi tarafından, Kullanıcının izni olmadan veya
+                        başka yasal bir temel olmadan Kullanıcının kişisel verilerinin yayılmasını engelleme
+                        gerekliliğine uyulması gereken yükümlülüktür.
                     </li>
                 </ul>
             </section>
             <section>
-                <h2>2. ОБЩИЕ
-                    ПОЛОЖЕНИЯ</h2>
-                <p>2.1. Даная
-                    Политика
-                    конфиденциальности
-                    является официальным
-                    типичным
-                    документом
-                    Администрации
-                    Веб-сайта и
-                    определяет порядок
-                    обработки
-                    персональных
-                    данных лиц,
-                    используют
-                    Форму
-                    обратного
-                    связи на
-                    Веб-сайт.</p>
+                <h2>2. GENEL HÜKÜMLER</h2>
+                <p>2.1. Bu Gizlilik Politikası, Web Sitesindeki Geri Bildirim Formunu kullanan kişilerin kişisel
+                    verilerinin işlenme yöntemini belirleyen Web Sitesi Yönetimi'nin resmi bir standart belgesidir.</p>
 
-                <p>2.2. Целью этой
-                    Политики
-                    конфиденциальности
-                    есть обеспечение
-                    должного
-                    защиты
-                    информации
-                    о Пользователе,
-                    в том числе
-                    его
-                    персональных
-                    данных от
-                    несанкционированного
-                    доступа и
-                    разглашения.
+                <p>2.2. Bu Gizlilik Politikasının amacı, Kullanıcının bilgilerinin, özellikle kişisel verilerinin
+                    izinsiz erişim ve açıklamalardan korunmasını sağlamaktır.
                 </p>
-                <p>2.3. Отношения,
-                    связанные со
-                    сбором,
-                    хранением,
-                    распространением
-                    и защитой
-                    персональных
-                    данных
-                    Пользователя
-                    регулируются этой
-                    Политикой
-                    конфиденциальности
-                    и
-                    действующим
-                    законодательством
-                    Украины.
+                <p>2.3. Kullanıcının kişisel verilerinin toplanması, saklanması, yayılması ve korunmasıyla ilgili
+                    ilişkiler, bu Gizlilik Politikası ve Ukrayna'daki mevcut yasalar tarafından düzenlenmektedir.
                 </p>
-                <p>2.4. Действует
-                    редакция
-                    Политики
-                    конфиденциальности
-                    является публичным
-                    документом,
-                    разработана
-                    Администрацией
-                    Веб-сайта и
-                    доступна
-                    любому
-                    Пользователю
-                    сети Интернет
-                    при
-                    пользовании
-                    Веб-сайта.
+                <p>2.4. Geçerli Gizlilik Politikası sürümü, Web Sitesi Yönetimi tarafından geliştirilen ve İnternet
+                    kullanıcılarının Web Sitesini kullanırken erişebileceği bir kamu belgesidir.
                 </p>
-                <p>2.5.
-                    Администрация
-                    Веб-сайта имеет
-                    право вносить
-                    изменения в настоящую
-                    Политику
-                    конфиденциальности.
+                <p>2.5. Web Sitesi Yönetimi, bu Gizlilik Politikasında değişiklik yapma hakkına sahiptir.
                 </p>
-                <p>2.6. При
-                    внесении изменений в
-                    Политики
-                    конфиденциальности,
-                    Администрация
-                    Веб-сайта
-                    сообщает
-                    об этом
-                    Пользователя
-                    путем
-                    размещение новой
-                    редакции
-                    Политики
-                    конфиденциальности
-                    на
-                    Веб-сайте.
+                <p>2.6. Gizlilik Politikasında değişiklik yapıldığında, Web Sitesi Yönetimi bunu Kullanıcıya yeni
+                    Gizlilik Politikası sürümünü Web Sitesinde yayınlayarak bildirir.
                 </p>
-                <p>2.7.
-                    Использование
-                    Пользователем
-                    Веб-сайта
-                    означает согласие с
-                    этой Политикой
-                    конфиденциальности
-                    и условиями
-                    обработки
-                    персональных
-                    данных
-                    Пользователя.
+                <p>2.7. Kullanıcının Web Sitesini kullanması, bu Gizlilik Politikası ve Kullanıcının kişisel verilerinin
+                    işlenmesi koşullarıyla uyum içinde olduğunu kabul ettiği anlamına gelir.
                 </p>
-                <p>2.8. В случае
-                    несогласия с
-                    условиями Политики
-                    конфиденциальности
-                    Пользователь
-                    должен
-                    прекратить
-                    использование
-                    Веб-сайта.
+                <p>2.8. Gizlilik Politikası şartlarına uymama durumunda, Kullanıcının Web Sitesini kullanmayı durdurması
+                    gerekmektedir.
                 </p>
-                <p>2.9.
-                    Администрация
-                    Веб-сайта нет
-                    проверяет
-                    достоверность
-                    персональных
-                    данных, что
-                    предоставляются
-                    Пользователем
-                    Веб-сайта.</p>
+                <p>2.9. Web Sitesi Yönetimi, Kullanıcı tarafından sağlanan kişisel verilerin doğruluğunu doğrulamaz.</p>
             </section>
             <section>
-                <h2>3. УСЛОВИЯ И ЦЕЛИ
-                    СБОРА И ОБРАБОТКИ
-                    ПЕРСОНАЛЬНЫХ
-                    ДАННЫХ
-                    ПОЛЬЗОВАТЕЛЕЙ.</h2>
-                <p>3.1. Персональные
-                    данные Пользователя
-                    такие как: ФИО
-                    Пользователя,
-                    контактный
-                    телефон
-                    Пользователя,
-                    адрес
-                    электронной
-                    почты (e-mail),
-                    а также
-                    дополнительная
-                    информация, что
-                    предоставляется
-                    Пользователем,
-                    передаются
-                    Пользователем
-                    Администрации
-                    Веб-сайта за
-                    согласием
-                    Пользователя.
+                <h2>3. KULLANICILARIN KİŞİSEL VERİLERİNİN TOPLANMA VE İŞLENME ŞARTLARI VE AMAÇLARI.</h2>
+                <p>3.1. Kullanıcının adı soyadı, iletişim telefon numarası, e-posta adresi ve Kullanıcı tarafından
+                    sağlanan diğer ek bilgiler, Kullanıcının onayıyla Web Sitesi Yönetimine iletilir.
                 </p>
                 <p>
-                    3.2. Передача
-                    персональных
-                    данных
-                    Пользователем
-                    Администрации
-                    Веб-сайта через
-                    Форму
-                    обратного
-                    связи означает
-                    согласие
-                    Пользователя на
-                    передачу и
-                    обработку его
-                    персональных
-                    данных.
+                    3.2. Kullanıcının Web Sitesi Yönetimine kişisel verilerini Geri Bildirim Formu aracılığıyla
+                    iletilmesi, Kullanıcının kişisel verilerinin iletilmesi ve işlenmesine onay verdiği anlamına gelir.
                 </p>
                 <p>
-                    3.3.
-                    Администрация
-                    Веб-сайта
-                    осуществляет обработку
-                    информации о
-                    Пользователе, в
-                    т.ч.
-                    его
-                    персональных
-                    данных, таких как:
-                    ФИО Пользователя,
-                    контактный
-                    телефон
-                    Пользователя,
-                    адрес
-                    электронной
-                    почты (e-mail),
-                    а также
-                    дополнительной
-                    информации о
-                    Пользователе
-                    предоставляемой
-                    им по своему
-                    желанием.
+                    3.3. Web Sitesi Yönetimi, Kullanıcı hakkındaki bilgilerin işlenmesini gerçekleştirir, bu bilgiler
+                    Kullanıcının adı soyadı, telefon numarası, e-posta adresi ve isteğe bağlı olarak sağladığı diğer
+                    bilgileri içerir.
                 </p>
                 <p>
-                    3.4. Обработка
-                    персональных
-                    данных
-                    осуществляется на
-                    основе
-                    принципов:
-                    законности
-                    целей и
-                    способов обработки
-                    персональных
-                    данных;
-                    соответствия
-                    целей обработки
-                    персональных
-                    данных
-                    целям,
-                    заранее
-                    определенным и
-                    заявленным при
-                    сборе
-                    персональных
-                    данных;
-                    соответствия
-                    объема и
-                    характера
-                    обрабатываемых
-                    персональных
-                    данным способам
-                    обработки
-                    персональных
-                    данных
-                    и целям обработки
-                    персональных
-                    данных;
-                    недопустимость
-                    объединения
-                    созданных для
-                    несовместимых
-                    между собой целей
-                    баз данных, что
-                    содержат
-                    персональные
-                    данные.
+                    3.4. Kişisel verilerin işlenmesi, aşağıdaki prensiplere dayanarak gerçekleştirilir: kişisel
+                    verilerin işlenme amacı ve yöntemlerinin yasallığı; kişisel verilerin işlenme amacının, kişisel
+                    verilerin toplanması sırasında önceden belirlenen ve açıklanan amaçlarla uyumlu olması; işlenen
+                    kişisel verilerin miktarı ve niteliğinin, kişisel verilerin işlenme yöntemleri ve amaçları ile
+                    uyumlu olması; kişisel verileri içeren veritabanlarının, uyumsuz amaçlar için oluşturulmuş olanların
+                    birleştirilmesinin kabul edilmemesi.
                 </p>
                 <p>
-                    3.5.
-                    Администрация
-                    Веб-сайта
-                    осуществляет обработку
-                    персональных
-                    данных
-                    Пользователя с
-                    его
-                    согласия в целях:
-                    идентификации
-                    Пользователя;
-                    установки с
-                    Пользователем
-                    обратной
-                    связи,
-                    включая
-                    направление
-                    сообщений,
-                    запросов, что
-                    касаются
-                    использования
-                    Веб-сайта,
-                    предоставления услуг,
-                    обработки
-                    Заказов от
-                    Пользователя;
-                    сообщения
-                    Пользователю
-                    Веб-сайта
-                    о состоянии
-                    заказанной
-                    консультации или
-                    встречи; для
-                    осуществления
-                    деятельности о
-                    предоставление
-                    услуг; предоставления
-                    Пользователю
-                    информации
-                    рекламного
-                    характера;
-                    предоставления
-                    Пользователю
-                    информации о
-                    отримання
-                    услуг, которые
-                    предоставляются ОДО Жилстрой-2</p>
+                    3.5. Web Sitesi Yönetimi, Kullanıcının onayıyla kullanıcının kişisel verilerini aşağıdaki amaçlarla
+                    işler: Kullanıcıyı tanımlama; Kullanıcı ile iletişim kurma, bildirimler, Web Sitesi kullanımıyla
+                    ilgili talepler, hizmetlerin sağlanması, Kullanıcı siparişlerinin işlenmesi ile ilgili talepler
+                    dahil olmak üzere geri bildirimde bulunma; Web Sitesi Kullanıcısına sipariş edilen danışmanlık veya
+                    buluşma durumu hakkında bildirimde bulunma; hizmet sunma faaliyetlerini gerçekleştirme; Kullanıcıya
+                    reklam amaçlı bilgi sağlama; sunulan hizmetlerin alınması ile ilgili bilgi sağlama.</p>
             </section>
             <section>
-                <h2>4. ХРАНЕНИЕ И
-                    ИСПОЛЬЗОВАНИЕ
-                    ПЕРСОНАЛЬНЫХ
-                    ДАННЫХ</h2>
-                <p>4.1. Хранение
-                    персональных
-                    данных предполагает
-                    действия по
-                    обеспечению их
-                    целостности и
-                    соответствующего
-                    режима доступа
-                    к ним.
-                </p><p>
-                4.2. Персональные
-                данные Пользователя
-                сохраняются
-                исключительно на
-                электронных
-                носителях и
-                используются
-                исключительно по
-                назначению,
-                оговоренным в п.
-                3 этой Политики
-                конфиденциальности.</p>
+                <h2>4. KİŞİSEL VERİLERİN SAKLANMASI VE KULLANIMI</h2>
+                <p>4.1. Kişisel verilerin saklanması, bütünlüklerinin sağlanması ve bunlara uygun erişim düzeninin
+                    sağlanması ile ilgili faaliyetleri içerir.
+                </p>
+                <p>
+                    4.2. Kullanıcının kişisel verileri yalnızca elektronik ortamlarda saklanır ve yalnızca bu Gizlilik
+                    Politikasının 3. maddesinde belirtilen amaçlar doğrultusunda kullanılır.</p>
             </section>
             <section>
-                <h2>5. ПЕРЕДАЧА
-                    ПЕРСОНАЛЬНЫХ
-                    ДАННЫХ ТРЕТЬИМ
-                    ЛИЦАМ</h2>
-                <p>5.1. Персональные
-                    данные Пользователя
-                    не передаются
-                    любым третьим
-                    лицам, за
-                    исключением
-                    случаев, прямо
-                    предусмотренных
-                    этой Политикой
-                    конфиденциальности.
-                </p><p>
-                5.2. Предоставление
-                персональных
-                данных
-                Пользователя по
-                запросом
-                государственных
-                органов и
-                органов
-                местного
-                самоуправление
-                осуществляется в
-                порядке,
-                предусмотренном
-                законодательством
-                Украины.
-            </p><p>
-                5.3. Распространение
-                персональных
-                данных без согласия
-                субъекта
-                персональных
-                данных или
-                уполномоченной
-                им лица
-                разрешается в
-                случаях,
-                определенных
-                законом, и только
-                (если это
-                необходимо) в
-                интересах
-                национальной
-                безопасности,
-                экономического
-                благополучия и
-                прав
-                человека.</p>
+                <h2>5. KİŞİSEL VERİLERİN ÜÇÜNCÜ TARAFLARA AKTARILMASI</h2>
+                <p>5.1. Kullanıcının kişisel verileri, bu Gizlilik Politikası'nda açıkça öngörülen durumlar dışında
+                    hiçbir üçüncü tarafa aktarılmaz.
+                </p>
+                <p>
+                    5.2. Kullanıcının kişisel verileri, Ukrayna mevzuatında öngörülen prosedürlere uygun olarak, devlet
+                    kurumlarının ve yerel yönetim organlarının talepleri doğrultusunda aktarılır.
+                </p>
+                <p>
+                    5.3. Kişisel verilerin, kişinin veya onun yetkilendirdiği kişinin izni olmadan, yalnızca yasada
+                    belirlenen durumlarda ve (gerekiyorsa) ulusal güvenlik, ekonomik refah ve insan hakları çıkarları
+                    doğrultusunda yayılması mümkündür.</p>
             </section>
             <section>
-                <h2>6. СРОКИ
-                    ХРАНЕНИЯ И
-                    Уничтожения
-                    ПЕРСОНАЛЬНЫХ
-                    ДАННЫХ</h2>
-                <p>6.1. Персональные
-                    данные Пользователя
-                    хранятся на
-                    электронном
-                    носители сайта
-                    бессрочно.
-                </p><p>
-                6.2. Персональные
-                данные Пользователя
-                уничтожаются при
-                желании самого
-                Пользователя на
-                основании
-                его обращения,
-                или по инициативе
-                Администратора
-                Веб-сайта без
-                объяснения причин
-                путем
-                удаления
-                Администрацией
-                Веб-сайта
-                информации,
-                размещенной
-                Пользователем, а
-                также
-                в других
-                случаях
-                предусмотренных
-                законодательством
-                Украины.</p>
+                <h2>6. KİŞİSEL VERİLERİN SAKLANMA VE YOK EDİLMESİ SÜRELERİ</h2>
+                <p>6.1. Kullanıcının kişisel verileri, web sitesinin elektronik ortamındaki taşıyıcısında süresiz olarak
+                    saklanır.
+                </p>
+                <p>
+                    6.2. Kullanıcının kişisel verileri, Kullanıcının isteği üzerine veya Ukrayna mevzuatında öngörülen
+                    diğer
+                    durumlarda, Web Sitesi Yöneticisi tarafından gerekçe belirtilmeksizin, Kullanıcı tarafından sağlanan
+                    bilginin Web Sitesi Yönetimi tarafından silinmesiyle yok edilir.</p>
             </section>
             <section>
-                <h2>7. ПРАВА И
-                    ОБЯЗАННОСТИ
-                    ПОЛЬЗОВАТЕЛЕЙ</h2>
-                <p>7.1. Пользователи
-                    имеют право:</p>
+                <h2>7. KULLANICILARIN HAKLARI VE SORUMLULUKLARI</h2>
+                <p>7.1. Kullanıcı hakları:</p>
                 <ul>
-                    <li>знать о
-                        источниках
-                        сбора,
-                        местонахождении
-                        своих
-                        персональных
-                        данных, цели их
-                        обработки;
+                    <li>Kişisel verilerinin toplanma kaynaklarını, yerini, işlenme amacını bilmesi;
                     </li>
-                    <li>на основании
-                        запроса
-                        получать от
-                        Администрации
-                        Веб-сайта
-                        информацию, что
-                        касается
-                        обработки его
-                        персональных
-                        данных.
+                    <li>Web Sitesi Yönetiminden, kişisel verilerinin işlenmesi ile ilgili bilgi talep etme hakkına sahip
+                        olması;
                     </li>
-                    <li>получать
-                        информацию о
-                        третьих лиц,
-                        которым передаются
-                        его персональные
-                        данные;
+                    <li>Kişisel verilerinin aktarıldığı üçüncü taraflar hakkında bilgi alması;
                     </li>
-                    <li>предъявлять
-                        мотивированные
-                        требование
-                        владельцу
-                        персональных
-                        данных с
-                        возражением
-                        против
-                        обработки своих
-                        персональных
-                        данных;
+                    <li>Kişisel verilerinin işlenmesine itiraz etmek için kişisel veri sahibine karşı gerekçeli talepte
+                        bulunması;
                     </li>
-                    <li>предъявлять
-                        мотивированные
-                        требования относительно
-                        изменения или
-                        уничтожение своих
-                        персональных
-                        данных, если
-                        эти данные
-                        обрабатываются
-                        незаконно ли
-                        недостоверными;
+                    <li>Kişisel verilerinin yasa dışı olarak işlenmesi veya yanlış olması durumunda, kişisel veri
+                        sahibinin gerekçeli talep ile kişisel verilerinin düzeltilmesini veya yok edilmesini isteme
+                        hakkı;
                     </li>
-                    <li>отозвать
-                        согласие на обработку
-                        персональных
-                        данных;
+                    <li>Kişisel verilerinin işlenmesine verdiği onayı geri çekme hakkı;
                     </li>
-                    <li>знать механизм
-                        автоматической
-                        обработки
-                        персональных
-                        данных.
+                    <li>Kişisel verilerinin otomatik işlenme mekanizmasını bilmesi.
                     </li>
                 </ul>
-                <p>7.2. Пользователи
-                    обязаны:</p>
+                <p>7.2. Kullanıcı yükümlülükleri:</p>
                 <ul>
                     <li>
-                        предоставить
-                        информацию о
-                        персональных данных
-                        необходимых для
-                        использования
-                        Веб-сайта;
+                        Web Sitesinden faydalanmak için gerekli olan kişisel verileri sağlaması;
                     </li>
-                    <li>соблюдать
-                        требования
-                        законодательства
-                        при пользовании
-                        Веб-сайтом и
-                        передачи
-                        персональных
-                        данных.
+                    <li>Web Sitesini kullanırken ve kişisel verilerini sağlarken yasalara uygun davranması.
                     </li>
                 </ul>
 
             </section>
             <section>
-                <h2>8. МЕРОПРИЯТИЯ ДЛЯ
-                    ЗАЩИТЫ
-                    ИНФОРМАЦИИ О
-                    ПОЛЬЗОВАТЕЛЯХ</h2>
-                <p>8.1.
-                    Администратор
-                    Веб-сайта
-                    предпринимает технические
-                    и
-                    организационно-правовые
-                    мероприятия с
-                    целью
-                    обеспечения
-                    защиты
-                    персональных
-                    данных
-                    Пользователя от
-                    неправомерного
-                    или
-                    случайного
-                    доступа к ним,
-                    уничтожения,
-                    извращения,
-                    блокировки,
-                    копирования,
-                    распространения, от
-                    незаконной
-                    обработки, а также
-                    от других
-                    неправомерных
-                    действий.</p>
+                <h2>8. KULLANICI BİLGİSİNİN KORUNMASI TEDBİRLERİ</h2>
+                <p>8.1. Web Sitesi Yöneticisi, Kullanıcının kişisel verilerini yetkisiz veya kazara erişimden, yok
+                    edilmesinden, değiştirilmeden, engellenmeden, kopyalanmadan, yayılmadan, yasadışı işlemlerden ve
+                    diğer yasa dışı işlemlerden korumak için teknik ve organizasyonel-hukuki tedbirler alır.</p>
             </section>
             <section>
-                <h2>9.
-                    ОТВЕТСТВЕННОСТЬ
-                    СТОРОН</h2>
-                <p>9.1. В случае
-                    нарушения норм
-                    законодательства
-                    о защите
-                    конфиденциальной
-                    информации, а
-                    также
-                    положений данной
-                    политики
-                    конфиденциальности
-                    стороны несут
-                    ответственность
-                    установленную
-                    законом.
+                <h2>9. TARAFLARIN SORUMLULUĞU</h2>
+                <p>9.1. Gizlilik bilgilerinin korunmasıyla ilgili yasal düzenlemelerin ihlali veya bu gizlilik
+                    politikasının hükümlerinin ihlali durumunda taraflar yasalar tarafından belirlenen sorumluluğu
+                    taşır.
                 </p>
                 <p>
-                    9.2. В случае
-                    потери или
-                    разглашение
-                    Конфиденциальной
-                    информации
-                    Администрация
-                    Веб-сайта нет
-                    несет
-                    ответственности,
-                    если данная
-                    конфиденциальная
-                    информация:
+                    9.2. Web Sitesi Yönetimi, Gizli Bilginin kaybı veya ifşası durumunda, bu gizli bilginin aşağıdaki
+                    durumlardan biri meydana geldiğinde sorumluluk taşımaz:
                     <ul>
-                        <li>стала
-                            публичным
-                            достоянием до ее
-                            потери или
-                            разглашения;
+                        <li>Gizli bilgi, kaybı veya ifşası öncesinde kamu malı haline gelmişse;
                         </li>
-                        <li>была получена
-                            от третьей
-                            стороны до
-                            момента ее
-                            получения
-                            Администрацией
-                            веб-сайта;
+                        <li>Gizli bilgi, Web Sitesi Yönetimi tarafından alınmadan önce üçüncü bir taraftan elde
+                            edilmişse;
                         </li>
-                        <li>была
-                            разглашена при
-                            согласии
-                            Пользователя.
+                        <li>Gizli bilgi, Kullanıcının onayıyla ifşa edilmişse.
                         </li>
                     </ul>
                 </p>
             </section>
             <section>
-                <h2>10. РЕШЕНИЕ
-                    СПОРОВ</h2>
-                <p>10.1. В спорах,
-                    возникающих из
-                    отношений между
-                    Пользователем
-                    Веб-сайта и
-                    Администрацией
-                    Веб-сайт,
-                    первоочередным является
-                    разрешение спора
-                    в досудебном
-                    порядке путем
-                    предъявления
-                    претензии.
-                </p><p>
-                10.2 Получатель
-                претензии
-                в течение 30
-                календарных дней
-                со дня получения
-                претензии,
-                письменно
-                сообщает
-                заявителю
-                претензии о
-                результатах
-                рассмотрения
-                претензии.
-            </p><p>
-
-                10.3. В случае
-                не урегулирования
-                спора в
-                досудебном
-                порядке стороны
-                могут
-                обратиться в
-                суд соответственно
-                требованиям действующего
-                законодательства
-                Украины.
-            </p><p>
-
-                10.4. К этой
-                Политики
-                конфиденциальности
-                и отношений между
-                Пользователем и
-                Администрацией
-                Веб-сайта
-                применяется
-                действующее
-                законодательство
-                Украины.</p>
+                <h2>10. ANLAŞMAZLIKLARIN ÇÖZÜMÜ</h2>
+                <p>10.1. Web Sitesi Kullanıcısı ve Web Sitesi Yönetimi arasındaki ilişkilerden kaynaklanan
+                    anlaşmazlıklarda, anlaşmazlığın önlenmesi için öncelikle dava öncesi bir çözüm yoluna başvurulması
+                    gerekmektedir.
+                </p>
+                <p>
+                    10.2. İtirazın alınmasından itibaren 30 takvim günü içinde, alıcının itirazı değerlendirme sonuçları
+                    hakkında yazılı olarak itiraz sahibini bilgilendirmesi gerekmektedir.
+                </p>
+                <p>
+                    10.3. Anlaşmazlık dava öncesi çözümle sonuçlanmazsa, taraflar Ukrayna'daki mevcut yasalara göre
+                    mahkemeye başvurabilirler.
+                </p>
+                <p>
+                    10.4. Bu Gizlilik Politikası ve Web Sitesi Kullanıcısı ile Web Sitesi Yönetimi arasındaki ilişkilere
+                    Ukrayna mevzuatı uygulanır.</p>
             </section>
         </main>
     );
