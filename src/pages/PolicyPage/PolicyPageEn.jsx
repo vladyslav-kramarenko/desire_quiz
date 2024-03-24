@@ -4,716 +4,200 @@ import "./PolicyPage.css";
 const PolicyPageEn = () => {
     return (
         <main className="policy-page">
-            <h1>ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ КОРИСТУВАЧІВ СЕРВІСУ</h1>
-            <p>Дана Політика конфіденційності встановлює порядок отримання, зберігання, обробки, використання і
-                розкриття персональних даних Користувача. Персональні дані від Користувачів Веб-сайту при
-                реєстрації в Формі зворотного зв’язку на Веб-сайті, а також під час використання Веб-сайту
-                Користувачами отримує ТДВ Житлобуд-2, якому належить сайт.</p>
+            <h1>PRIVACY POLICY FOR SERVICE USERS</h1>
+            <p>This Privacy Policy establishes the procedure for obtaining, storing, processing, using and disclosing
+                the User’s personal data. Personal data from Users of the Website when registering in the feedback form
+                on the Website, as well as when using the Website by Users, is received by ALC Zhytlobud-2, which owns
+                the website.</p>
             <section>
-                <h2>1. ВИЗНАЧЕННЯ ТЕРМІНІВ</h2>
-                <p>1.1 У цій Політиці конфіденційності використовуються наступні терміни:</p>
+                <h2>1. Definition of terms</h2>
+                <p>1.1 The following terms are used in this Privacy Policy</p>
                 <ul>
-                    <li>Веб-сайт — веб-сторінка, розташована в мережі Інтернет за адресою:
-                        https://quiz.desire-antalya.com/.
+                    <li>Website - a web page located on the Internet at the address: https://quiz.desire-antalya.com/.
                     </li>
-                    <li>Адміністрація Веб-сайту – уповноважені співробітники на управління Веб-сайтом,
-                        що
-                        діють від імені ТДВ "Житлобуд-2", які організовують і здійснюють обробку
-                        персональних
-                        даних, а також визначають цілі обробки персональних даних, склад персональних
-                        даних, що
-                        підлягають обробці, дії або операції, що здійснюються з персональними даними.
+                    <li>Website Administration - authorized employees to manage the Website, who act on behalf of ALC
+                        "Zhytlobud-2", who organize and carry out processing
                     </li>
-                    <li>Користувач — особа, яка розмістила персональні дані за допомогою
-                        реєстрації/користування сервісами на Веб-сайті.
+                    <li>User is a person who posted personal data through registration/use of services on the site.
                     </li>
-                    <li>Форма зворотного зв’язку – спеціальна форма, де Користувач при реєстрації
-                        розміщує
-                        свої персональні дані з метою передачі їх Адміністрації Веб-сайту.
+                    <li>Feedback form is a special form where the User, upon registration, places his personal data for
+                        transfer to the Website Administration.
                     </li>
-                    <li>Персональні дані – відомості чи сукупність відомостей про фізичну особу, яка
-                        ідентифікована або може бути конкретно ідентифікована.
+                    <li>Personal data – information or a collection of information about an individual who is identified
+                        or can be specifically identified.
                     </li>
-                    <li>Обробка персональних даних – будь-яка дія або сукупність дій, таких як
-                        збирання,
-                        реєстрація, накопичення, зберігання, адаптування, зміна, поновлення,
-                        використання і
-                        поширення (розповсюдження, реалізація, передача), знеособлення, знищення
-                        персональних
-                        даних, у тому числі з використанням інформаційних (автоматизованих) систем
-                        або
-                        без
-                        використання таких засобів.
+                    <li>Processing of personal data – any action or set of actions, such as collection, registration,
+                        accumulation, storage, adaptation, modification, updating, use and distribution (distribution,
+                        implementation, transfer), depersonalization, destruction of personal data, including using
+                        information (automated) systems or without the use of such means.
                     </li>
-                    <li>Конфіденційність персональних даних
-                        – обов’язкові для дотримання
-                        Адміністрацією
-                        Веб-сайту вимоги щодо
-                        недопущення поширення
-                        персональних даних Користувача
-                        без
-                        його
-                        згоди або за наявності іншої
-                        законної підстави.
+                    <li>Confidentiality of personal data – it is mandatory for the Website Administration to comply with
+                        the requirements regarding the prevention of dissemination of the User’s personal data without
+                        his consent or in the presence of other legal grounds.
                     </li>
                 </ul>
             </section>
             <section>
-                <h2>2. ЗАГАЛЬНІ
-                    ПОЛОЖЕННЯ</h2>
-                    <p>2.1. Дана
-                        Політика
-                        конфіденційності
-                        є офіційним
-                        типовим
-                        документом
-                        Адміністрації
-                        Веб-сайту і
-                        визначає порядок
-                        обробки
-                        персональних
-                        даних осіб, що
-                        використовують
-                        Форму
-                        зворотного
-                        зв’язку на
-                        Веб-сайті.</p>
+                <h2>2. GENERAL PROVISIONS</h2>
+                <p>2.1. This Privacy Policy is an official typical document of the Website Administration and determines
+                    the procedure for processing personal data of persons who use the Feedback Form on the Website.</p>
 
-                    <p>2.2. Метою цієї
-                        Політики
-                        конфіденційності
-                        є забезпечення
-                        належного
-                        захисту
-                        інформації
-                        про Користувача,
-                        в тому числі
-                        його
-                        персональних
-                        даних від
-                        несанкціонованого
-                        доступу і
-                        розголошення.
-                    </p>
-                    <p>2.3. Відносини,
-                        пов’язані зі
-                        збором,
-                        зберіганням,
-                        розповсюдженням
-                        і захистом
-                        персональних
-                        даних
-                        Користувача
-                        регулюються цією
-                        Політикою
-                        конфіденційності
-                        та
-                        чинним
-                        законодавством
-                        України.
-                    </p>
-                    <p>2.4. Чинна
-                        редакція
-                        Політики
-                        конфіденційності
-                        є публічним
-                        документом,
-                        розроблена
-                        Адміністрацією
-                        Веб-сайту і
-                        доступна
-                        будь-якому
-                        Користувачеві
-                        мережі Інтернет
-                        при
-                        користуванні
-                        Веб-сайтом.
-                    </p>
-                    <p>2.5.
-                        Адміністрація
-                        Веб-сайту має
-                        право вносити
-                        зміни в справжню
-                        Політику
-                        конфіденційності.
-                    </p>
-                    <p>2.6. При
-                        внесенні змін до
-                        Політики
-                        конфіденційності,
-                        Адміністрація
-                        Веб-сайту
-                        повідомляє
-                        про це
-                        Користувача
-                        шляхом
-                        розміщення нової
-                        редакції
-                        Політики
-                        конфіденційності
-                        на
-                        Веб-сайті.
-                    </p>
-                    <p>2.7.
-                        Використання
-                        Користувачем
-                        Веб-сайту
-                        означає згоду з
-                        цією Політикою
-                        конфіденційності
-                        та умовами
-                        обробки
-                        персональних
-                        даних
-                        Користувача.
-                    </p>
-                    <p>2.8. У разі
-                        незгоди з
-                        умовами Політики
-                        конфіденційності
-                        Користувач
-                        повинен
-                        припинити
-                        використання
-                        Веб-сайту.
-                    </p>
-                    <p>2.9.
-                        Адміністрація
-                        Веб-сайту не
-                        перевіряє
-                        достовірність
-                        персональних
-                        даних, що
-                        надаються
-                        Користувачем
-                        Веб-сайту.</p>
+                <p>2.2. The purpose of this Privacy Policy is to ensure proper protection of information about the User,
+                    including his personal data from unauthorized access and disclosure.
+                </p>
+                <p>2.3. Relations related to the collection, storage, distribution and protection of the User’s personal
+                    data are governed by this Privacy Policy and the current legislation of Ukraine.
+                </p>
+                <p>2.4. The current version of the Privacy Policy is a public document, developed by the Website
+                    Administration and available to any Internet User when using the Website.
+                </p>
+                <p>2.5. The Website Administration has the right to make changes to this Privacy Policy.
+                </p>
+                <p>2.6. When changes are made to the Privacy Policy, the Website Administration notifies the User by
+                    posting a new version of the Privacy Policy on the Website.
+                </p>
+                <p>2.7. The User's use of the Website constitutes acceptance of this Privacy Policy and the terms of
+                    processing of the User's personal data.
+                </p>
+                <p>2.8. In case of disagreement with the terms of the Privacy Policy, the User must stop using the
+                    Website.
+                </p>
+                <p>2.9. The Website Administration does not verify the accuracy of the personal data provided by the
+                    Website User.</p>
             </section>
             <section>
-                <h2>3. УМОВИ ТА ЦІЛІ
-                    ЗБОРУ ТА ОБРОБКИ
-                    ПЕРСОНАЛЬНИХ
-                    ДАНИХ
-                    КОРИСТУВАЧІВ.</h2>
-                <p>3.1. Персональні
-                    дані Користувача
-                    такі як: ПІБ
-                    Користувача,
-                    контактний
-                    телефон
-                    Користувача,
-                    адреса
-                    електронної
-                    пошти (e-mail),
-                    а також
-                    додаткова
-                    інформація, що
-                    надається
-                    Користувачем,
-                    передаються
-                    Користувачем
-                    Адміністрації
-                    Веб-сайту за
-                    згодою
-                    Користувача.
+                <h2>3. CONDITIONS AND PURPOSE OF COLLECTION AND PROCESSING OF USERS' PERSONAL DATA.</h2>
+                <p>3.1. Personal data of the User such as: Full name of the User, contact phone number of the User,
+                    email address (e-mail), as well as additional information provided by the User, are transferred by
+                    the User to the Administration of the Website with the consent of the User.
                 </p>
                 <p>
-                    3.2. Передача
-                    персональних
-                    даних
-                    Користувачем
-                    Адміністрації
-                    Веб-сайту через
-                    Форму
-                    зворотного
-                    зв’язку означає
-                    згоду
-                    Користувача на
-                    передачу та
-                    обробку його
-                    персональних
-                    даних.
+                    3.2. The transfer of personal data by the User to the Website Administration through the Feedback
+                    Form means the User’s consent to the transfer and processing of his personal data.
                 </p>
                 <p>
-                    3.3.
-                    Адміністрація
-                    Веб-сайту
-                    здійснює обробку
-                    інформації про
-                    Користувача, в
-                    т.ч.
-                    його
-                    персональних
-                    даних, таких як:
-                    ПІБ Користувача,
-                    контактний
-                    телефон
-                    Користувача,
-                    адреса
-                    електронної
-                    пошти (e-mail),
-                    а також
-                    додаткової
-                    інформації про
-                    Користувача, що
-                    надається
-                    ним за своїм
-                    бажанням.
+                    3.3. The Website Administration processes information about the User, incl. his personal data, such
+                    as: the User’s full name, the User’s contact phone number, email address (e-mail), as well as
+                    additional information about the User provided by him at his own request.
                 </p>
                 <p>
-                    3.4. Обробка
-                    персональних
-                    даних
-                    здійснюється на
-                    основі
-                    принципів:
-                    законності
-                    цілей і
-                    способів обробки
-                    персональних
-                    даних;
-                    відповідності
-                    цілей обробки
-                    персональних
-                    даних
-                    цілям,
-                    заздалегідь
-                    визначеним і
-                    заявленим при
-                    зборі
-                    персональних
-                    даних;
-                    відповідності
-                    обсягу та
-                    характеру
-                    оброблюваних
-                    персональних
-                    даних способам
-                    обробки
-                    персональних
-                    даних
-                    і цілям обробки
-                    персональних
-                    даних;
-                    неприпустимість
-                    об’єднання
-                    створених для
-                    несумісних
-                    між собою цілей
-                    баз даних, що
-                    містять
-                    персональні
-                    дані.
+                    3.4. The processing of personal data is carried out on the basis of the following principles: the
+                    legality of the purposes and methods of processing personal data; compliance of the purposes of
+                    processing personal data with the goals predetermined and stated when collecting personal data;
+                    compliance with the volume and nature of the personal data processed, the methods of processing
+                    personal data and the purposes of processing personal data; the inadmissibility of combining
+                    databases created for incompatible purposes that contain personal data.
                 </p>
                 <p>
-                    3.5.
-                    Адміністрація
-                    Веб-сайту
-                    здійснює обробку
-                    персональних
-                    даних
-                    Користувача з
-                    його
-                    згоди в цілях:
-                    ідентифікації
-                    Користувача;
-                    встановлення з
-                    Користувачем
-                    зворотного
-                    зв’язку,
-                    включаючи
-                    напрямок
-                    повідомлень,
-                    запитів, що
-                    стосуються
-                    використання
-                    Веб-сайту,
-                    надання послуг,
-                    обробки
-                    Замовлень від
-                    Користувача;
-                    повідомлення
-                    Користувача
-                    Веб-сайту
-                    про стан
-                    замовленої
-                    консультації або
-                    зустрічі; для
-                    здійснення
-                    діяльності з
-                    надання
-                    послуг; надання
-                    Користувачеві
-                    інформації
-                    рекламного
-                    характеру;
-                    надання
-                    Користувачеві
-                    інформації щодо
-                    отримання
-                    послуг, які
-                    надаються ТДВ Житлобуд-2</p>
+                    3.5. The Website Administration processes the User’s personal data with his consent for the purposes
+                    of: identifying the User; establishing feedback with the User, including sending messages, requests
+                    regarding the use of the Website, provision of services, processing of Orders from the User;
+                    messages to the Website User about the status of the ordered consultation or meeting; to carry out
+                    activities to provide services; providing the User with advertising information; providing the User
+                    with information about the provision of services provided by ALC Zhytlobud-2</p>
             </section>
             <section>
-                <h2>4. ЗБЕРІГАННЯ І
-                    ВИКОРИСТАННЯ
-                    ПЕРСОНАЛЬНИХ
-                    ДАНИХ</h2>
-                <p>4.1. Зберігання
-                    персональних
-                    даних передбачає
-                    дії щодо
-                    забезпечення їх
-                    цілісності та
-                    відповідного
-                    режиму доступу
-                    до них.
+                <h2>4. STORAGE AND USE OF PERSONAL DATA</h2>
+                <p>4.1. Storing personal data involves actions to ensure its integrity and the appropriate mode of
+                    access to it.
                 </p><p>
-                4.2. Персональні
-                дані Користувача
-                зберігаються
-                виключно на
-                електронних
-                носіях і
-                використовуються
-                виключно за
-                призначенням,
-                обумовленим в п.
-                3 цієї Політики
-                конфіденційності.</p>
+                4.2. The User's personal data is stored exclusively on electronic media and is used exclusively for the
+                purpose specified in clause 3 of this Privacy Policy.</p>
             </section>
             <section>
-                <h2>5. ПЕРЕДАЧА
-                    ПЕРСОНАЛЬНИХ
-                    ДАНИХ ТРЕТІМ
-                    ОСОБАМ</h2>
-                <p>5.1. Персональні
-                    дані Користувача
-                    не передаються
-                    будь-яким третім
-                    особам, за
-                    винятком
-                    випадків, прямо
-                    передбачених
-                    цією Політикою
-                    конфіденційності.
+                <h2>5. TRANSFER OF PERSONAL DATA TO THIRD PARTIES</h2>
+                <p>5.1. The User's personal data is not transferred to any third parties, except as expressly provided
+                    for in this Privacy Policy.
                 </p><p>
-                5.2. Надання
-                персональних
-                даних
-                Користувача за
-                запитом
-                державних
-                органів та
-                органів
-                місцевого
-                самоврядування
-                здійснюється в
-                порядку,
-                передбаченому
-                законодавством
-                України.
+                5.2. Providing the User’s personal data at the request of state bodies and local governments is carried
+                out in the manner prescribed by the legislation of Ukraine.
             </p><p>
-                5.3. Поширення
-                персональних
-                даних без згоди
-                суб’єкта
-                персональних
-                даних або
-                уповноваженої
-                ним особи
-                дозволяється у
-                випадках,
-                визначених
-                законом, і лише
-                (якщо це
-                необхідно) в
-                інтересах
-                національної
-                безпеки,
-                економічного
-                добробуту та
-                прав
-                людини.</p>
+                5.3. Dissemination of personal data without the consent of the subject of personal data or a person
+                authorized by him is permitted in cases specified by law, and only (if necessary) in the interests of
+                national security, economic well-being and human rights.</p>
             </section>
             <section>
-                <h2>6. ТЕРМІНИ
-                    ЗБЕРІГАННЯ ТА
-                    ЗНИЩЕННЯ
-                    ПЕРСОНАЛЬНИХ
-                    ДАНИХ</h2>
-                <p>6.1. Персональні
-                    дані Користувача
-                    зберігаються на
-                    електронному
-                    носії сайту
-                    безстроково.
+                <h2>6. TERMS OF STORAGE AND DESTRUCTION OF PERSONAL DATA</h2>
+                <p>6.1. The User’s personal data is stored on the website’s electronic media indefinitely.
                 </p><p>
-                6.2. Персональні
-                дані Користувача
-                знищуються при
-                бажанні самого
-                Користувача на
-                підставі
-                його звернення,
-                або з ініціативи
-                Адміністратора
-                Веб-сайту без
-                пояснення причин
-                шляхом
-                видалення
-                Адміністрацією
-                Веб-сайту
-                інформації,
-                розміщеної
-                Користувачем, а
-                також
-                в інших
-                випадках
-                передбачених
-                законодавством
-                України.</p>
+                6.2. The User's personal data is destroyed at the request of the User on the basis of his request, or at
+                the initiative of the Website Administrator without explanation, by deleting the information posted by
+                the User by the Website Administration, as well as in other cases provided for by the legislation of
+                Ukraine.</p>
             </section>
             <section>
-                <h2>7. ПРАВА ТА
-                    ОБОВ’ЯЗКИ
-                    КОРИСТУВАЧІВ</h2>
-                <p>7.1. Користувачі
-                    мають право:
-                    <ul>
-                        <li>знати про
-                            джерела
-                            збирання,
-                            місцезнаходження
-                            своїх
-                            персональних
-                            даних, мету їх
-                            обробки;
-                        </li>
-                        <li>на підставі
-                            запиту
-                            отримувати від
-                            Адміністрації
-                            Веб-сайту
-                            інформацію, що
-                            стосується
-                            обробки його
-                            персональних
-                            даних.
-                        </li>
-                        <li>отримувати
-                            інформацію про
-                            третіх осіб,
-                            яким передаються
-                            його персональні
-                            дані;
-                        </li>
-                        <li>пред’являти
-                            вмотивовану
-                            вимогу
-                            володільцю
-                            персональних
-                            даних із
-                            запереченням
-                            проти
-                            обробки своїх
-                            персональних
-                            даних;
-                        </li>
-                        <li>пред’являти
-                            вмотивовану
-                            вимогу щодо
-                            зміни або
-                            знищення своїх
-                            персональних
-                            даних, якщо
-                            ці дані
-                            обробляються
-                            незаконно чи є
-                            недостовірними;
-                        </li>
-                        <li>відкликати
-                            згоду на обробку
-                            персональних
-                            даних;
-                        </li>
-                        <li>знати механізм
-                            автоматичної
-                            обробки
-                            персональних
-                            даних.
-                        </li>
-                    </ul></p>
+                <h2>7. RIGHTS AND OBLIGATIONS OF USERS</h2>
+                <p>7.1. Users have the right:</p>
+                <ul>
+                    <li>know about the sources of collection, the location of your personal data, the purpose of their
+                        processing;
+                    </li>
+                    <li>based on a request, receive information from the Website Administration regarding the processing
+                        of his personal data.
+                    </li>
+                    <li>receive information about third parties to whom his personal data is transferred;
+                    </li>
+                    <li>submit a reasoned demand to the owner of personal data with an objection to the processing of
+                        your personal data;
+                    </li>
+                    <li>make motivated demands for changes or destruction of your personal data if this data is
+                        processed illegally or is inaccurate;
+                    </li>
+                    <li>withdraw consent to the processing of personal data;
+                    </li>
+                    <li>know the mechanism for automatic processing of personal data.
+                    </li>
+                </ul>
+                <p>7.2. Users are obliged to:</p>
+                <ul>
+                    <li>
+                        provide information about the personal data necessary to use the Website;
+                    </li>
+                    <li>comply with legal requirements when using the Website and transferring personal data.
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>8. EVENTS TO PROTECT USER INFORMATION</h2>
+                <p>8.1. The Website Administrator takes technical, organizational and legal measures to ensure the
+                    protection of the User’s personal data from unauthorized or accidental access, destruction,
+                    distortion, blocking, copying, distribution, illegal processing, as well as from other unlawful
+                    actions.</p>
+            </section>
+            <section>
+                <h2>9. RESPONSIBILITY OF THE PARTIES</h2>
+                <p>9.1. In case of violation of the legislation on the protection of confidential information, as well
+                    as the provisions of this privacy policy, the parties bear responsibility established by law.
+                </p>
                 <p>
+                    9.2. In case of loss or disclosure of Confidential Information, the Website Administration is not
+                    responsible if this confidential information:
                     <ul>
-                        <li>
-                            7.2. Користувачі
-                            зобов’язані:
-                            • надати
-                            інформацію про
-                            персональні дані
-                            необхідні для
-                            користування
-                            Веб-сайтом;
+                        <li>became in the public domain before it was lost or disclosed;
                         </li>
-                        <li>• дотримуватися
-                            вимог
-                            законодавства
-                            при користуванні
-                            Веб-сайтом та
-                            наданні
-                            персональних
-                            даних.
+                        <li>was received from a third party prior to its receipt by the Website Administration;
+                        </li>
+                        <li>was disclosed with the consent of the User.
                         </li>
                     </ul>
                 </p>
             </section>
             <section>
-                <h2>8. ЗАХОДИ ДЛЯ
-                    ЗАХИСТУ
-                    ІНФОРМАЦІЇ ПРО
-                    КОРИСТУВАЧІВ</h2>
-                <p>8.1.
-                    Адміністратор
-                    Веб-сайту
-                    приймає технічні
-                    та
-                    організаційно-правові
-                    заходи з
-                    метою
-                    забезпечення
-                    захисту
-                    персональних
-                    даних
-                    Користувача від
-                    неправомірного
-                    або
-                    випадкового
-                    доступу до них,
-                    знищення,
-                    перекручення,
-                    блокування,
-                    копіювання,
-                    поширення, від
-                    незаконної
-                    обробки, а також
-                    від інших
-                    неправомірних
-                    дій.</p>
-            </section>
-            <section>
-                <h2>9.
-                    ВІДПОВІДАЛЬНІСТЬ
-                    СТОРІН</h2>
-                <p>9.1. У разі
-                    порушення норм
-                    законодавства
-                    про захист
-                    конфіденційної
-                    інформації, а
-                    також
-                    положень даної
-                    політики
-                    конфіденційності
-                    сторони несуть
-                    відповідальність
-                    встановлену
-                    законом.
-                </p>
-                <p>
-                    9.2. У разі
-                    втрати або
-                    розголошення
-                    Конфіденційної
-                    інформації
-                    Адміністрація
-                    Веб-сайту не
-                    несе
-                    відповідальність,
-                    якщо дана
-                    конфіденційна
-                    інформація:
-                    <ul>
-                        <li>стала
-                            публічним
-                            надбанням до її
-                            втрати або
-                            розголошення;
-                        </li>
-                        <li>була отримана
-                            від третьої
-                            сторони до
-                            моменту її
-                            отримання
-                            Адміністрацією
-                            Веб-сайту;
-                        </li>
-                        <li>була
-                            розголошена за
-                            згодою
-                            Користувача.
-                        </li>
-                    </ul>
-                </p>
-            </section>
-            <section>
-                <h2>10. ВИРІШЕННЯ
-                    СПОРІВ</h2>
-                <p>10.1. У спорах,
-                    що виникають із
-                    відносин між
-                    Користувачем
-                    Веб-сайту та
-                    Адміністрацією
-                    Веб-сайту,
-                    першочерговим є
-                    вирішення спору
-                    у досудовому
-                    порядку шляхом
-                    пред’явлення
-                    претензії.
+                <h2>10. DISPUTE RESOLUTION</h2>
+                <p>10.1. In disputes arising from the relationship between the Website user and the Website
+                    Administration, the priority is to resolve the dispute pre-trial by filing a claim.
                 </p><p>
-                10.2 Отримувач
-                претензії
-                протягом 30
-                календарних днів
-                з дня отримання
-                претензії,
-                письмово
-                повідомляє
-                заявника
-                претензії про
-                результати
-                розгляду
-                претензії.
+                10.2 The recipient of the claim, within 30 calendar days from the date of receipt of the claim, informs
+                the claimant in writing about the results of consideration of the claim.
             </p><p>
-
-                10.3. У випадку
-                не врегулювання
-                спору у
-                досудовому
-                порядку сторони
-                можуть
-                звернутися до
-                суду відповідно
-                до вимог чинного
-                законодавства
-                України.
+                10.3. If the dispute is not resolved pre-trial, the parties may go to court in accordance with the
+                requirements of the current legislation of Ukraine.
             </p><p>
-
-                10.4. До цієї
-                Політики
-                конфіденційності
-                і відносин між
-                Користувачем та
-                Адміністрацією
-                Веб-сайту
-                застосовується
-                чинне
-                законодавство
-                України.</p>
+                10.4. The current legislation of Ukraine applies to this Privacy Policy and the relationship between the
+                User and the Website Administration.</p>
             </section>
         </main>
-);
+    );
 };
 
 export default PolicyPageEn;
