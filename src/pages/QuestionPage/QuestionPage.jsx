@@ -8,7 +8,7 @@ import ContactInfo from "../../components/ContactInfo/ContactInfo";
 
 import {useIntl} from "react-intl";
 import ProgressBar from "../../components/ProgressBar/ProgressBar";
-import questionsData from './data/questionsData'; // Adjust path as necessary
+import questionsData from '../../data/questionsData'; // Adjust path as necessary
 
 const QuestionPage = () => {
     const intl = useIntl();
