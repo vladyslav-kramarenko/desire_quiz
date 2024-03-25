@@ -1,15 +1,20 @@
 # Quiz for Desire Antalya
 
 ## Introduction
-Welcome to the repository for the Quiz, a simple yet effective quiz designed to filter out bots and capture leads for Desire Antalya's residential complex. This quiz is an integral part of our advertising strategy and serves as a direct link to our main website.
+The Quiz for Desire Antalya residential complex is designed to engage potential clients. It's a part of our advertising strategy to capture genuine leads. The quiz filters out bots through interactive questions, ensuring quality leads are directed to our CRM system for efficient follow-up.
 
-## Purpose
-The Quiz is crafted to engage potential clients through a series of three questions, ensuring that only genuine leads are forwarded to our CRM. It's a seamless extension of our main website, [desire-antalya.com](https://desire-antalya.com), and reflects the quality and attention to detail of our residential complex.
+## Technical Specifications
 
-## Features
-- **Advertisement Link**: A direct link used in our marketing campaigns.
-- **Bot Filtering**: Three strategically designed questions to deter bots.
-- **CRM Integration**: Direct submission of contact details to our CRM system.
+### Built With
+- **React**: For building dynamic user interfaces, providing an engaging quiz experience.
+- **react-intl**: Enables internationalization, offering the quiz in various languages to cater to a global audience.
+- **react-phone-number-input**: Enhances the user experience with an intuitive phone number input field that supports international formats.
+- **React Router**: Manages navigation within the application, facilitating smooth transitions between quiz components.
+
+### Features
+- **Multilingual Support**: Offers the quiz in multiple languages, increasing accessibility and engagement across different regions.
+- **CRM Integration**: Utilizes G-plus CRM for lead management, capturing user responses and contact details directly from the quiz. This integration ensures that user data is organized and accessible for immediate action, enhancing the efficiency of our lead-generation process.
+- **Confidentiality Policy Accessibility**: Provides users with easy access to our confidentiality policy in multiple languages, underlining our commitment to user privacy.
 
 ## Getting Started
 To get a local copy up and running, follow these simple steps:
@@ -26,7 +31,7 @@ To get a local copy up and running, follow these simple steps:
    npm start
 
 ## Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+Your contributions are welcome! If you wish to contribute, please fork the repository, apply your changes, and submit a pull request.
 
 ## License
-Distributed under the MIT License. See LICENSE for more information.
+Distributed under the MIT License.
