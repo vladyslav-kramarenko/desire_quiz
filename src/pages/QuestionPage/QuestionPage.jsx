@@ -1,8 +1,5 @@
 import React, {useState} from 'react';
 import './QuestionPage.css';
-import hotel from './hotel.jpg';
-import flat from './flat.jpg';
-import penthouse from './penthouse.jpg';
 
 import ArrowButton from "../../components/ArrowButton/ArrowButton";
 import QuestionWithRadioAnswer from "../../components/QuestionWithRadioAnswer/QuestionWithRadioAnswer";
@@ -11,34 +8,12 @@ import ContactInfo from "../../components/ContactInfo/ContactInfo";
 
 import {useIntl} from "react-intl";
 import ProgressBar from "../../components/ProgressBar/ProgressBar";
+import questionsData from './data/questionsData'; // Adjust path as necessary
 
 const QuestionPage = () => {
     const intl = useIntl();
     const [answers, setAnswers] = useState({});
-    const questions = [
-        {
-            id: 'purposeQuestion',
-            answers: [
-                {id: 'purposeAnswer1', image: ''},
-                {id: 'purposeAnswer2', image: ''},
-            ],
-        },
-        {
-            id: 'investExperienceQuestion',
-            answers: [
-                {id: 'investExperienceAnswer1', image: ''},
-                {id: 'investExperienceAnswer2', image: ''},
-            ],
-        },
-        {
-            id: 'propertyTypeQuestion',
-            answers: [
-                {id: 'propertyTypeAnswer1', image: hotel},
-                {id: 'propertyTypeAnswer2', image: flat},
-                {id: 'propertyTypeAnswer3', image: penthouse},
-            ],
-        },
-    ];
+    const questions = questionsData;
 
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 
