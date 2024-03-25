@@ -33,6 +33,10 @@ const messages = {
         sentRequest: 'Submit an application',
         //modal
         closeModal: 'Close',
+        //404
+        goHomeButton: 'Go to Home Page',
+        pageNotFoundDescription:'The page you are looking for does not exist or has been moved.',
+        pageNotFound: '404 - Page Not Found',
     },
     ua: {
         // home page
@@ -68,6 +72,10 @@ const messages = {
         sentRequest: 'Залишити заявку',
         //modal
         closeModal: 'Закрити',
+        //404
+        goHomeButton: 'Перейти на домашню сторінку',
+        pageNotFoundDescription:'Сторінка, яку ви шукаєте, не існує або була переміщена.',
+        pageNotFound: '404 - Сторінка не знайдена',
     },
     ru: {
         // home page
@@ -103,6 +111,10 @@ const messages = {
         sentRequest: 'Оставить заявку',
         //modal
         closeModal: 'Закрыть',
+        //404
+        goHomeButton: 'Вернуться на домашнюю страницу',
+        pageNotFoundDescription:'Страница, которую вы ищете, не существует или была перемещена.',
+        pageNotFound: '404 Страница не найдена',
     },
     tr: {
         // home page
@@ -138,6 +150,10 @@ const messages = {
         sentRequest: 'Başvuru yap',
         //modal
         closeModal: 'Kapat',
+        //404
+        goHomeButton: 'Ana sayfaya git',
+        pageNotFoundDescription:'Aradığınız sayfa mevcut değil veya taşınmış.',
+        pageNotFound: '404 Sayfa Bulunamadı',
     },
 };
 

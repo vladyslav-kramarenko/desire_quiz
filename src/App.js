@@ -12,6 +12,7 @@ import PolicyPageTr from "./pages/PolicyPage/PolicyPageTr";
 import {IntlProvider} from "react-intl";
 import messages from "./util/i18n";
 import {LocaleContext} from "./contexts/LocaleContext";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 
 function App() {
     useEffect(() => {
@@ -31,11 +32,12 @@ function App() {
 
                         <Route path="/questions" element={<QuestionPage/>}/>
                         <Route path="/thank-you" element={<ThankYouPage/>}/>
-
+                        <Route path="/policy" element={<PolicyPageUa/>} />
                         <Route path="/policy/en" element={<PolicyPageEn/>} />
                         <Route path="/policy/ua" element={<PolicyPageUa/>} />
                         <Route path="/policy/ru" element={<PolicyPageRu/>} />
                         <Route path="/policy/tr" element={<PolicyPageTr/>} />
+                        <Route path="*" element={<NotFoundPage/>} />
                     </Routes>
                 </Router>
             </IntlProvider>

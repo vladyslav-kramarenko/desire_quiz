@@ -1,0 +1,11 @@
+.go-home-btn{
+
+    padding: 16px 20px;
+    font-weight: 400;
+    font-size: 1em;
+    margin-top: 50px;
+
+    width: min-content;
+    min-width: 250px;
+    max-width: 100%;
+}
