@@ -29,7 +29,7 @@ const messages = {
         phone: 'Phone',
         name: 'Name',
         email: 'E-mail',
-        iAgreeWithPolicies: 'agree to the terms of use and privacy policy',
+        iAgreeWithPolicies: 'I agree to the terms of use and privacy policy',
         sentRequest: 'Submit an application',
         //modal
         closeModal: 'Close',
