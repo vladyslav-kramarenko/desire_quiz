@@ -10,6 +10,7 @@ import ModalMessage from "../../components/ModalMessage/ModalMessage";
 import ContactInfo from "../../components/ContactInfo/ContactInfo";
 
 import {useIntl} from "react-intl";
+import ProgressBar from "../../components/ProgressBar/ProgressBar";
 
 const QuestionPage = () => {
     const intl = useIntl();
@@ -85,6 +86,10 @@ const QuestionPage = () => {
 
     return (
         <main className="questions-page">
+            {currentQuestionIndex < questions.length && (
+                <ProgressBar currentStep={currentQuestionIndex + 1} totalSteps={questions.length}/>
+            )}
+
             {currentQuestionIndex < questions.length ? (
                 <QuestionWithRadioAnswer
                     questionId={questions[currentQuestionIndex].id}
