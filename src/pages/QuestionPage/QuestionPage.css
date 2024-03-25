@@ -1,13 +1,3 @@
-/*.question-body {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    color: white;*/
-/*    box-sizing: border-box;*/
-/*    padding: 10px 50px;*/
-/*    justify-items: center;*/
-/*    justify-content: space-evenly;*/
-/*}*/
-
 .questions-page {
     display: flex;
     flex-direction: column;
